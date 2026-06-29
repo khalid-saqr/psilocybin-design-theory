@@ -1,6 +1,6 @@
 # Notice
 
-**Psilocybin Design: A Theory-Method for Deriving Software Organisms from Gaps** is authored by Khalid Saqr.
+**Psilocybin Design:  Bio-inspired theory and CLI package for designing computer software as digital organisms** is authored by Khalid Saqr.
 
 Author ORCID: https://orcid.org/0000-0002-3058-2705
 

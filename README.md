@@ -1,10 +1,10 @@
 # Psilocybin Design Theory
 
-Publication repository for **Psilocybin Design: A Theory-Method for Deriving Software Organisms from Gaps**.
+Publication repository for **Psilocybin Design:  Bio-inspired theory and CLI package for designing computer software as digital organisms**.
 
 Author: **Khalid Saqr**  
 ORCID: <https://orcid.org/0000-0002-3058-2705>  
-Version: **1.0.0**  
+Version: **1.0.1**
 Date: **29 June 2026**  
 Technical report: **MD-TR-2026-001**  
 Rights manager: **KNOWDYN LTD**  

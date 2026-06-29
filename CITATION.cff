@@ -1,12 +1,12 @@
 cff-version: 1.2.0
 message: "If you use or cite this work, please cite it using the metadata from this file."
-title: "Psilocybin Design: A Theory-Method for Deriving Software Organisms from Gaps"
+title: "Psilocybin Design:  Bio-inspired theory and CLI package for designing computer software as digital organisms"
 type: report
 authors:
   - family-names: Saqr
     given-names: Khalid
     orcid: "https://orcid.org/0000-0002-3058-2705"
-version: "1.0.0"
+version: "1.0.1"
 date-released: "2026-06-29"
 abstract: >-
   Software design often begins after the decisive question has already been compressed into requirements, features, architecture, data models, or stack choices. This paper proposes Psilocybin Design as a theory-method for preserving that prior question. It argues that a software project begins with a gap: a failed or insufficient relation between intention and possibility in a real practice. The method proceeds from the gap to the language-games around the gap, from language-games to hidden verbs, from hidden verbs to relations, from relations to invariants, and from invariants to a software genome. The genome states the minimal identity of the system: what it must sense, remember, transform, connect, protect, expose, repair, or let decay in order to remain itself. Only after this identity is extracted can an organismic model, ontology, survival conditions, and engineering body be justified. Psilocybin Design is not a claim that software is literally alive, nor is it an invitation to decorate software with biological metaphor. It is a disciplined method for deriving software identity before architecture, validating that identity through counter-design and survival tests, and tracing the result into engineering decisions. Its central claim is that software should not first be designed as a tool, product, service, repository, workflow, or stack. It should first be understood by what it must remain in order to continue bridging the gap that called it into existence.
@@ -26,7 +26,7 @@ keywords:
   - survival conditions
 preferred-citation:
   type: report
-  title: "Psilocybin Design: A Theory-Method for Deriving Software Organisms from Gaps"
+  title: "Psilocybin Design:  Bio-inspired theory and CLI package for designing computer software as digital organisms"
   authors:
     - family-names: Saqr
       given-names: Khalid
@@ -36,6 +36,6 @@ preferred-citation:
   year: 2026
   month: 6
   date-start: "2026-06-29"
-  version: "1.0.0"
+  version: "1.0.1"
   report-number: "MD-TR-2026-001"
   url: "https://khalid-saqr.github.io/psilocybin-design-theory/"
