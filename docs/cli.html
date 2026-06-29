@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Psilocybin Genesis CLI | Psilocybin Design Theory</title>
+<meta name="description" content="Local-first CLI for operationalizing Psilocybin Design Theory into agent-readable genesis repositories.">
+<meta name="author" content="Khalid Saqr">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://khalid-saqr.github.io/psilocybin-design-theory/cli.html">
+<link rel="stylesheet" href="style.css">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Psilocybin Genesis CLI">
+<meta property="og:description" content="Local-first CLI for operationalizing Psilocybin Design Theory into agent-readable genesis repositories.">
+<meta property="og:url" content="https://khalid-saqr.github.io/psilocybin-design-theory/cli.html">
+<meta property="og:site_name" content="Psilocybin Design Theory">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Psilocybin Genesis CLI">
+<meta name="twitter:description" content="Local-first CLI for operationalizing Psilocybin Design Theory into agent-readable genesis repositories.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Psilocybin Genesis CLI","description":"Local-first CLI for operationalizing Psilocybin Design Theory into agent-readable genesis repositories.","applicationCategory":"DeveloperApplication","operatingSystem":"Windows, macOS, Linux","programmingLanguage":"Python","isBasedOn":"https://khalid-saqr.github.io/psilocybin-design-theory/paper.html","codeRepository":"https://github.com/khalid-saqr/psilocybin-design-theory/tree/main/packages/psilocybin-design-cli","author":{"@type":"Person","name":"Khalid Saqr","identifier":"https://orcid.org/0000-0002-3058-2705"},"copyrightHolder":{"@type":"Person","name":"Khalid Saqr"},"copyrightYear":2026,"license":"All rights reserved; no license granted"}</script>
+</head>
+<body>
+<nav aria-label="Primary">
+  <a href="./">Home</a>
+  <a href="paper.html">HTML paper</a>
+  <a href="cli.html">CLI</a>
+  <a href="psilocybin-design-theory.pdf">PDF</a>
+  <a href="publications.html">Publications</a>
+  <a href="metadata/citation.bib">BibTeX</a>
+</nav>
+<header>
+  <div class="kicker">Operational companion · Local-first design compiler</div>
+  <h1>Psilocybin Genesis CLI</h1>
+  <p class="meta">Local-first CLI for operationalizing Psilocybin Design Theory into agent-readable genesis repositories.</p>
+  <div class="actions">
+    <a class="button primary" href="paper.html">Read the theory paper</a>
+    <a class="button" href="psilocybin-design-theory.pdf">Download the PDF</a>
+    <a class="button" href="https://github.com/khalid-saqr/psilocybin-design-theory/tree/main/packages/psilocybin-design-cli">View source package</a>
+  </div>
+</header>
+<main>
+  <section aria-labelledby="what-it-is">
+    <h2 id="what-it-is">What it is</h2>
+    <p>Psilocybin Genesis CLI is a local-first, LLM-assisted design compiler. It guides a user through Psilocybin Design Theory and emits an agent-readable genesis-repo for Codex, GitHub Copilot, Claude Code, or another coding agent.</p>
+    <p>The CLI does not build the final application. It produces a structured seed repository containing the design genome, ontology, survival tests, stack rationale, implementation sequence, and agent instructions required for a coding agent to implement the software organism described by the design genome.</p>
+  </section>
+  <section class="abstract" aria-labelledby="theory-foundation">
+    <h2 id="theory-foundation">Theory foundation</h2>
+    <p>The CLI is the operational companion to <a href="paper.html">Psilocybin Design: A Theory-Method for Deriving Software Organisms from Gaps</a>. The paper defines the theory-method; the CLI turns that method into a local workflow for producing recoverable design memory and agent-readable implementation seeds.</p>
+    <p>For citation and study, use the <a href="paper.html">HTML theory paper</a>, <a href="psilocybin-design-theory.pdf">PDF theory paper</a>, or <a href="metadata/citation.bib">BibTeX citation</a>.</p>
+  </section>
+  <section aria-labelledby="what-it-does">
+    <h2 id="what-it-does">What it does</h2>
+    <ul>
+      <li>Creates a local design workspace.</li>
+      <li>Maintains <code>psilocybin.design.yaml</code> as canonical design memory.</li>
+      <li>Guides work through gap, language-game, hidden verbs, relations, invariants, genome, organism, ontology, survival/death conditions, stack, and implementation sequence.</li>
+      <li>Optionally asks a local LLM for structured suggestions.</li>
+      <li>Requires user acceptance before LLM suggestions enter design memory.</li>
+      <li>Validates schema and traceability deterministically.</li>
+      <li>Renders a genesis-repo directory and <code>.zip</code> pack.</li>
+      <li>Generates <code>AGENTS.md</code>, <code>CLAUDE.md</code>, and <code>.github/copilot-instructions.md</code>.</li>
+    </ul>
+  </section>
+  <section aria-labelledby="what-it-does-not-do">
+    <h2 id="what-it-does-not-do">What it does not do</h2>
+    <ul>
+      <li>It does not build the final application.</li>
+      <li>It does not require a cloud LLM.</li>
+      <li>It does not include model weights.</li>
+      <li>It does not create GitHub repositories.</li>
+      <li>It does not claim that software is biologically alive.</li>
+      <li>It does not silently let an LLM overwrite the design.</li>
+    </ul>
+  </section>
+  <section aria-labelledby="installation">
+    <h2 id="installation">Installation</h2>
+    <p>The current documented installation path is from the repository source package.</p>
+    <pre><code>cd packages/psilocybin-design-cli
+python -m pip install -e .
+psilocybin --help
+psilocybin doctor</code></pre>
+  </section>
+  <section aria-labelledby="quickstart">
+    <h2 id="quickstart">Deterministic quickstart</h2>
+    <pre><code>psilocybin init research-memory
+cd research-memory.design
+psilocybin interview
+psilocybin validate
+psilocybin render --allow-warnings
+psilocybin pack --allow-warnings</code></pre>
+    <p>The generated pack appears under <code>outputs/research-memory-genesis.zip</code>.</p>
+  </section>
+  <section aria-labelledby="generated-structure">
+    <h2 id="generated-structure">Generated genesis-repo structure</h2>
+    <pre><code>&lt;project&gt;-genesis/
+├── README.md
+├── AGENTS.md
+├── CLAUDE.md
+├── .github/
+│   └── copilot-instructions.md
+├── DESIGN.md
+├── IMPLEMENTATION_SEQUENCE.md
+├── SURVIVAL_TESTS.md
+├── psilocybin.design.yaml
+├── docs/
+│   ├── genome.md
+│   ├── organism.md
+│   ├── ontology.md
+│   ├── stack-rationale.md
+│   └── decision-memory.md
+└── tests/
+    └── survival/
+        └── README.md</code></pre>
+  </section>
+  <section aria-labelledby="validation-gates">
+    <h2 id="validation-gates">Validation gates</h2>
+    <p>The validator checks schema shape and semantic traceability: verbs trace to language evidence; relations trace to verbs; invariants trace to relations; genome traces to invariants when present; survival conditions are testable; death conditions are explicit; stack rationale traces to genome and survival; and implementation phases trace to design objects.</p>
+  </section>
+  <section aria-labelledby="llm-support">
+    <h2 id="llm-support">Optional local LLM support</h2>
+    <p>The default runtime is Ollama, and any OpenAI-compatible local endpoint can also be configured. LLM outputs are suggestions only: they are written to <code>suggestions/&lt;stage&gt;.suggestion.json</code> and never modify <code>psilocybin.design.yaml</code> until accepted by the user.</p>
+    <pre><code>ollama pull qwen3:4b
+psilocybin config set llm.enabled true
+psilocybin config set llm.provider ollama
+psilocybin config set llm.model qwen3:4b
+psilocybin doctor
+psilocybin suggest verbs
+psilocybin accept verbs</code></pre>
+  </section>
+  <section aria-labelledby="source-rights-citation">
+    <h2 id="source-rights-citation">Source, rights, and citation</h2>
+    <div class="grid">
+      <div class="card"><strong>Source package</strong><br><a href="https://github.com/khalid-saqr/psilocybin-design-theory/tree/main/packages/psilocybin-design-cli">packages/psilocybin-design-cli</a></div>
+      <div class="card"><strong>Theory paper</strong><br><a href="paper.html">paper.html</a> · <a href="psilocybin-design-theory.pdf">PDF</a></div>
+      <div class="card"><strong>Citation</strong><br><a href="metadata/citation.bib">BibTeX</a> · <a href="metadata/citation.ris">RIS</a> · <a href="metadata/citation.enw">EndNote</a></div>
+      <div class="card"><strong>Rights</strong><br><a href="https://github.com/khalid-saqr/psilocybin-design-theory/blob/main/LICENSE">LICENSE</a> · <a href="https://github.com/khalid-saqr/psilocybin-design-theory/blob/main/RIGHTS.md">RIGHTS.md</a> · <a href="https://github.com/khalid-saqr/psilocybin-design-theory/blob/main/NOTICE.md">NOTICE.md</a></div>
+    </div>
+    <p class="small">All Rights Reserved. No reuse, copying, modification, distribution, sublicensing, or derivative rights are granted except where separately authorized by Khalid Saqr / KNOWDYN LTD or independently permitted by applicable law.</p>
+  </section>
+</main>
+<footer><p class="small">Copyright © 2026 Khalid Saqr. All rights reserved. No license granted. Rights managed by KNOWDYN LTD, <a href="mailto:ipcontrol@knowdyn.co.uk">ipcontrol@knowdyn.co.uk</a>.</p></footer>
+</body>
+</html>

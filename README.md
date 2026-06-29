@@ -27,6 +27,7 @@ Expected GitHub Pages URL after deployment:
 ├── README.md
 ├── codemeta.json
 ├── docs/
+│   ├── cli.html
 │   ├── index.html
 │   ├── paper.html
 │   ├── publications.html
@@ -39,6 +40,12 @@ Expected GitHub Pages URL after deployment:
 │       ├── citation.enw
 │       ├── citation.ris
 │       └── metadata.json
+├── packages/
+│   └── psilocybin-design-cli/
+│       ├── pyproject.toml
+│       ├── README.md
+│       ├── src/
+│       └── tests/
 ├── paper/
 │   ├── Psilocybin_Design_Theory_Complete.tex
 │   ├── Psilocybin_Design_Theory_Complete.original.tex
@@ -46,6 +53,10 @@ Expected GitHub Pages URL after deployment:
 │   └── references.bib
 └── .github/workflows/pages.yml
 ```
+
+## CLI package
+
+The repository includes **Psilocybin Genesis CLI** in `packages/psilocybin-design-cli`. The console command is `psilocybin`, and the package provides a local-first workflow for converting Psilocybin Design inputs into agent-readable genesis repositories. See [`packages/psilocybin-design-cli/README.md`](packages/psilocybin-design-cli/README.md) and the public CLI page at <https://khalid-saqr.github.io/psilocybin-design-theory/cli.html>.
 
 ## Rights
 
@@ -76,6 +87,7 @@ Indexing by Google Scholar or any external aggregator cannot be guaranteed; this
    - `https://khalid-saqr.github.io/psilocybin-design-theory/`
    - `https://khalid-saqr.github.io/psilocybin-design-theory/psilocybin-design-theory.pdf`
    - `https://khalid-saqr.github.io/psilocybin-design-theory/paper.html`
+   - `https://khalid-saqr.github.io/psilocybin-design-theory/cli.html`
    - `https://khalid-saqr.github.io/psilocybin-design-theory/publications.html`
    - `https://khalid-saqr.github.io/psilocybin-design-theory/sitemap.xml`
 
