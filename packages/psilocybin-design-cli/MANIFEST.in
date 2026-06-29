@@ -1,0 +1,4 @@
+recursive-include src/psilocybin_design_cli/schemas *.json
+recursive-include src/psilocybin_design_cli/templates *.j2 *.txt
+include README.md
+include LICENSE

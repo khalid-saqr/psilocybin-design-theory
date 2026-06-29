@@ -1,0 +1,21 @@
+Task: suggest genome for the Psilocybin Design stage.
+
+Return exactly this JSON object shape:
+{
+  "schema_version": "1.0",
+  "stage": "genome",
+  "suggestions": [
+    {
+      "id": "suggestion-001",
+      "operation": "add",
+      "target_path": "hidden_verbs",
+      "value": {},
+      "confidence": "medium",
+      "evidence": ["quote from provided material"],
+      "reason": "why this suggestion follows from the provided material"
+    }
+  ],
+  "warnings": []
+}
+
+Adjust target_path to the stage. Use only provided material.

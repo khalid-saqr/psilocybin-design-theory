@@ -1,0 +1,19 @@
+# Organism Model
+
+- Model: {{ design.organism.model or "Not specified." }}
+- Reason: {{ design.organism.reason or "Not specified." }}
+
+## Boundary inside
+{% for item in design.organism.boundary_inside %}- {{ item }}
+{% else %}- Not specified.
+{% endfor %}
+
+## Boundary outside
+{% for item in design.organism.boundary_outside %}- {{ item }}
+{% else %}- Not specified.
+{% endfor %}
+
+## Rejected models
+{% for item in design.organism.rejected_models %}- {{ item }}
+{% else %}- Not specified.
+{% endfor %}

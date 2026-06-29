@@ -1,0 +1,261 @@
+schema_version: '1.0'
+project:
+  name: research-memory
+  raw_intention: A tool for research teams to remember why decisions were made across
+    papers, experiments, meetings, and code changes.
+  desired_outcome: New researchers can recover why important decisions happened and
+    whether they still hold.
+  target_users:
+  - principal investigator
+  - postdoc
+  - new researcher
+  - software maintainer
+  environment: Multi-person research team with papers, code, meetings, and evolving
+    claims.
+  constraints:
+  - auditability
+  - low-friction capture
+gap:
+  failed_relation: Research outputs are detached from the reasoning that produced
+    them.
+  present_arrangement: Slack, notebooks, paper drafts, and commit history are searched
+    manually.
+  missing_possibility: The team cannot reliably recover why a decision was made.
+  affected_actors:
+  - principal investigator
+  - postdoc
+  - new researcher
+  - maintainer
+  evidence:
+  - Why did we do it this way?
+  - Was this result superseded?
+  - Who approved this?
+language_game:
+  repeated_phrases:
+  - Why did we do it this way?
+  - Was this result superseded?
+  - Who approved this?
+  - What evidence supported that change?
+  workarounds:
+  - Slack search
+  - old notebooks
+  - asking senior people
+  - reading commit history
+  roles:
+  - principal investigator
+  - postdoc
+  - new researcher
+  - maintainer
+  tensions:
+  - memory depends on senior people
+  - obsolete findings look current
+  judgments:
+  - trust decays when reasoning cannot be recovered
+hidden_verbs:
+- id: verb-remember
+  verb: remember
+  evidence:
+  - Why did we do it this way?
+  accepted: true
+  source: user
+- id: verb-verify
+  verb: verify
+  evidence:
+  - What evidence supported that change?
+  accepted: true
+  source: user
+- id: verb-decay
+  verb: decay
+  evidence:
+  - Was this result superseded?
+  accepted: true
+  source: user
+relations:
+- id: relation-decision-evidence
+  name: decision_to_evidence
+  source_entity: Decision
+  target_entity: Evidence
+  constraint: Every major decision must cite supporting evidence.
+  traces_to_verbs:
+  - verb-remember
+  - verb-verify
+- id: relation-result-status
+  name: result_to_status
+  source_entity: Result
+  target_entity: Status
+  constraint: Every result must show whether it is current, superseded, disputed,
+    or obsolete.
+  traces_to_verbs:
+  - verb-decay
+invariants:
+- id: invariant-decision-evidence
+  statement: A major decision without evidence is incomplete.
+  must_remain_true_when: Interfaces, storage, teams, or workflows change.
+  violated_by: Allowing final decisions with no supporting evidence.
+  traces_to_relations:
+  - relation-decision-evidence
+- id: invariant-superseded-visible
+  statement: A superseded result remains findable but must not appear current.
+  must_remain_true_when: Search, dashboards, or exports change.
+  violated_by: Showing obsolete results as current.
+  traces_to_relations:
+  - relation-result-status
+genome:
+  statement: The system preserves research decision memory by connecting decisions,
+    evidence, actors, status changes, and supersession events so the team can recover
+    why something happened and whether it still holds.
+  must_sense:
+  - new decisions
+  - evidence changes
+  - supersession events
+  must_remember:
+  - decision rationale
+  - supporting evidence
+  - actors
+  - timestamps
+  must_transform:
+  - raw events into traceable decision records
+  must_connect:
+  - decisions to evidence
+  - results to status
+  must_protect:
+  - provenance
+  - audit trail
+  must_expose:
+  - decision trace
+  - current versus obsolete status
+  must_repair:
+  - broken evidence links must be visible as provenance defects
+  must_decay:
+  - obsolete claims
+  - superseded results
+  traces_to_invariants:
+  - invariant-decision-evidence
+  - invariant-superseded-visible
+organism:
+  model: research-memory organism
+  boundary_inside:
+  - Decision
+  - Evidence
+  - Actor
+  - Result
+  - StatusTransition
+  - Supersession
+  boundary_outside:
+  - generic task management
+  - full paper search
+  - laboratory notebook replacement
+  reason: The organism must preserve decision identity under changing research context.
+  rejected_models:
+  - generic document repository
+  - generic CRUD task tracker
+ontology:
+  entities:
+  - Decision
+  - Evidence
+  - Actor
+  - Result
+  - Claim
+  - StatusTransition
+  - Supersession
+  relations:
+  - Decision supported_by Evidence
+  - Decision made_by Actor
+  - Result has_status StatusTransition
+  - Claim supersedes Claim
+  states:
+  - current
+  - superseded
+  - disputed
+  - obsolete
+  boundaries:
+  - inside decision provenance
+  - outside raw document storage
+survival_conditions:
+- id: survival-decision-trace
+  condition: Every major decision can be traced to supporting evidence.
+  test: Create a major decision without evidence; system must reject it or mark it
+    incomplete.
+  evidence:
+  - What evidence supported that change?
+  traces_to_invariants:
+  - invariant-decision-evidence
+- id: survival-supersession
+  condition: Superseded results remain visible but cannot appear current.
+  test: Mark a result superseded; current-result views must exclude it unless explicitly
+    requested.
+  evidence:
+  - Was this result superseded?
+  traces_to_invariants:
+  - invariant-superseded-visible
+death_conditions:
+- id: death-document-dump
+  condition: The system stores documents but cannot reconstruct decisions.
+  why_dead_even_if_running: It no longer preserves the design genome of research decision
+    memory.
+  traces_to_survival:
+  - survival-decision-trace
+- id: death-obsolete-current
+  condition: Obsolete results appear current.
+  why_dead_even_if_running: The system destroys the distinction required for knowledge
+    decay.
+  traces_to_survival:
+  - survival-supersession
+stack:
+  selected:
+    name: FastAPI + PostgreSQL + React
+    language: Python and TypeScript
+    storage: PostgreSQL
+    interface: Web UI and HTTP API
+    services:
+    - API service
+    - database
+    - frontend
+    deployment: Containerized deployment
+    observability: Structured logs and audit events
+    tests: Pytest and frontend tests plus survival tests
+  alternatives:
+  - Local Markdown + SQLite
+  - Supabase + Next.js
+  rationale: Relational traceability, provenance, statuses, and multi-actor audit
+    are central to the genome.
+  traces_to_genome: true
+  traces_to_survival:
+  - survival-decision-trace
+  - survival-supersession
+implementation_sequence:
+- id: phase-data-model
+  phase: Genome-bearing data model
+  purpose: Create entities that preserve decision memory and supersession.
+  files_to_create:
+  - backend/models.py
+  - backend/migrations/0001_initial.sql
+  validation:
+  - Decision requires evidence before completion
+  - Result has explicit status
+  traces_to:
+  - invariant-decision-evidence
+  - invariant-superseded-visible
+- id: phase-survival-api
+  phase: Survival APIs
+  purpose: Implement APIs that enforce evidence trace and supersession logic.
+  files_to_create:
+  - backend/api/decisions.py
+  - backend/api/results.py
+  validation:
+  - Survival tests pass
+  traces_to:
+  - survival-decision-trace
+  - survival-supersession
+agent_contract:
+  targets:
+  - codex
+  - copilot
+  - claude
+  instructions: Begin with psilocybin.design.yaml and implement in the order defined
+    by IMPLEMENTATION_SEQUENCE.md.
+  forbidden_moves:
+  - do not start from generic CRUD
+  - do not create untraced components
+  completion_definition: All survival tests are implemented or scaffolded and every
+    major component traces to the design memory.

@@ -1,0 +1,43 @@
+# Genome
+
+{{ design.genome.statement or "No genome recorded." }}
+
+## Must sense
+{% for item in design.genome.must_sense %}- {{ item }}
+{% else %}- Not specified.
+{% endfor %}
+
+## Must remember
+{% for item in design.genome.must_remember %}- {{ item }}
+{% else %}- Not specified.
+{% endfor %}
+
+## Must transform
+{% for item in design.genome.must_transform %}- {{ item }}
+{% else %}- Not specified.
+{% endfor %}
+
+## Must connect
+{% for item in design.genome.must_connect %}- {{ item }}
+{% else %}- Not specified.
+{% endfor %}
+
+## Must protect
+{% for item in design.genome.must_protect %}- {{ item }}
+{% else %}- Not specified.
+{% endfor %}
+
+## Must expose
+{% for item in design.genome.must_expose %}- {{ item }}
+{% else %}- Not specified.
+{% endfor %}
+
+## Must repair
+{% for item in design.genome.must_repair %}- {{ item }}
+{% else %}- Not specified.
+{% endfor %}
+
+## Must decay
+{% for item in design.genome.must_decay %}- {{ item }}
+{% else %}- Not specified.
+{% endfor %}

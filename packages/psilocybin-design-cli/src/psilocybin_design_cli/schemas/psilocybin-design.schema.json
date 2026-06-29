@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Psilocybin Design Memory",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "project",
+    "gap",
+    "language_game",
+    "hidden_verbs",
+    "relations",
+    "invariants",
+    "genome",
+    "organism",
+    "ontology",
+    "survival_conditions",
+    "death_conditions",
+    "stack",
+    "implementation_sequence",
+    "agent_contract"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "project": {
+      "type": "object"
+    },
+    "gap": {
+      "type": "object"
+    },
+    "language_game": {
+      "type": "object"
+    },
+    "hidden_verbs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "verb",
+          "evidence"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "verb": {
+            "type": "string"
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "relations": {
+      "type": "array"
+    },
+    "invariants": {
+      "type": "array"
+    },
+    "genome": {
+      "type": "object"
+    },
+    "organism": {
+      "type": "object"
+    },
+    "ontology": {
+      "type": "object"
+    },
+    "survival_conditions": {
+      "type": "array"
+    },
+    "death_conditions": {
+      "type": "array"
+    },
+    "stack": {
+      "type": "object"
+    },
+    "implementation_sequence": {
+      "type": "array"
+    },
+    "agent_contract": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

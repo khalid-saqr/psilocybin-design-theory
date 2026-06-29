@@ -1,0 +1,21 @@
+# Ontology
+
+## Entities
+{% for item in design.ontology.entities %}- {{ item }}
+{% else %}- Not specified.
+{% endfor %}
+
+## Relations
+{% for item in design.ontology.relations %}- {{ item }}
+{% else %}- Not specified.
+{% endfor %}
+
+## States
+{% for item in design.ontology.states %}- {{ item }}
+{% else %}- Not specified.
+{% endfor %}
+
+## Boundaries
+{% for item in design.ontology.boundaries %}- {{ item }}
+{% else %}- Not specified.
+{% endfor %}

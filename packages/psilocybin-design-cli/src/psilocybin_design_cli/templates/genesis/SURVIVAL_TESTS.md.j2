@@ -1,0 +1,21 @@
+# Survival Tests
+
+Survival tests protect the design genome. A system may still run while being dead
+relative to its original Psilocybin Design identity; these tests prevent that.
+
+{% for s in design.survival_conditions %}
+## {{ s.id }}
+
+- Condition: {{ s.condition }}
+- Test: {{ s.test }}
+- Evidence: {{ s.evidence|join('; ') or "Not specified." }}
+- Traces to invariants: {{ s.traces_to_invariants|join(', ') }}
+{% else %}
+No survival tests recorded.
+{% endfor %}
+
+## Death conditions to preserve
+
+{% for d in design.death_conditions %}- `{{ d.id }}`: {{ d.condition }} — {{ d.why_dead_even_if_running }}
+{% else %}No death conditions recorded.
+{% endfor %}

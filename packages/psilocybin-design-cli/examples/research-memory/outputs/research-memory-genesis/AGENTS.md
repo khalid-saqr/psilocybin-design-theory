@@ -1,0 +1,38 @@
+# Agent Instructions
+
+You are implementing this repository from Psilocybin Design artifacts.
+
+
+Begin with `psilocybin.design.yaml`.
+
+Do not begin from framework defaults, feature assumptions, or generic boilerplate.
+
+Every implementation decision must trace to at least one of:
+
+- gap
+- language-game
+- hidden verb
+- relation
+- invariant
+- genome
+- organism
+- ontology
+- survival condition
+- death condition
+
+Implement in the order defined by `IMPLEMENTATION_SEQUENCE.md`.
+
+Do not create components that cannot be traced to the design genome, ontology, or
+survival conditions.
+
+## Compliance checklist
+
+Before completing implementation, confirm:
+
+- [ ] I read `psilocybin.design.yaml`.
+- [ ] I identified the design genome.
+- [ ] I mapped each major file to a survival condition or invariant.
+- [ ] I did not create untraced components.
+- [ ] I implemented or scaffolded survival tests.
+- [ ] I preserved death conditions as explicit failure modes.
+- [ ] I did not collapse the organism model into generic CRUD or boilerplate.

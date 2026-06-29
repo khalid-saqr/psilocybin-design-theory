@@ -1,0 +1,67 @@
+# Psilocybin Design Memory
+
+## Gap
+
+- Failed relation: {{ design.gap.failed_relation or "Not specified." }}
+- Present arrangement: {{ design.gap.present_arrangement or "Not specified." }}
+- Missing possibility: {{ design.gap.missing_possibility or "Not specified." }}
+
+## Language-game
+
+{% for phrase in design.language_game.repeated_phrases %}- {{ phrase }}
+{% else %}No repeated phrases recorded.
+{% endfor %}
+
+## Hidden verbs
+
+{% for v in design.hidden_verbs %}- `{{ v.id }}`: {{ v.verb }} — evidence: {{ v.evidence|join('; ') }}
+{% else %}No hidden verbs recorded.
+{% endfor %}
+
+## Relations
+
+{% for r in design.relations %}- `{{ r.id }}`: {{ r.name }} ({{ r.source_entity }} → {{ r.target_entity }}) — {{ r.constraint }}
+{% else %}No relations recorded.
+{% endfor %}
+
+## Invariants
+
+{% for i in design.invariants %}- `{{ i.id }}`: {{ i.statement }}
+{% else %}No invariants recorded.
+{% endfor %}
+
+## Genome
+
+{{ design.genome.statement or "No genome recorded." }}
+
+## Organism
+
+- Model: {{ design.organism.model or "Not specified." }}
+- Boundary inside: {{ design.organism.boundary_inside|join(', ') or "Not specified." }}
+- Boundary outside: {{ design.organism.boundary_outside|join(', ') or "Not specified." }}
+- Reason: {{ design.organism.reason or "Not specified." }}
+
+## Ontology
+
+- Entities: {{ design.ontology.entities|join(', ') or "Not specified." }}
+- Relations: {{ design.ontology.relations|join(', ') or "Not specified." }}
+- States: {{ design.ontology.states|join(', ') or "Not specified." }}
+- Boundaries: {{ design.ontology.boundaries|join(', ') or "Not specified." }}
+
+## Survival conditions
+
+{% for s in design.survival_conditions %}- `{{ s.id }}`: {{ s.condition }} — test: {{ s.test }}
+{% else %}No survival conditions recorded.
+{% endfor %}
+
+## Death conditions
+
+{% for d in design.death_conditions %}- `{{ d.id }}`: {{ d.condition }} — why dead even if running: {{ d.why_dead_even_if_running }}
+{% else %}No death conditions recorded.
+{% endfor %}
+
+## Stack rationale
+
+Selected stack: {{ design.stack.selected.name or "Not selected." }}
+
+{{ design.stack.rationale or "No stack rationale recorded." }}

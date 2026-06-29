@@ -1,0 +1,21 @@
+# Stack Rationale
+
+## Selected stack
+
+- Name: {{ design.stack.selected.name or "Not selected." }}
+- Language: {{ design.stack.selected.language or "Not specified." }}
+- Storage: {{ design.stack.selected.storage or "Not specified." }}
+- Interface: {{ design.stack.selected.interface or "Not specified." }}
+- Deployment: {{ design.stack.selected.deployment or "Not specified." }}
+- Observability: {{ design.stack.selected.observability or "Not specified." }}
+- Tests: {{ design.stack.selected.tests or "Not specified." }}
+
+## Rationale
+
+{{ design.stack.rationale or "No rationale recorded." }}
+
+## Alternatives
+
+{% for alt in design.stack.alternatives %}- {{ alt }}
+{% else %}- No alternatives recorded.
+{% endfor %}

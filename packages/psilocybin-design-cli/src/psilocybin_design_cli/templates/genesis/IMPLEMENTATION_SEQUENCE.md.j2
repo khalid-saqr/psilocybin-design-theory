@@ -1,0 +1,21 @@
+# Implementation Sequence
+
+Implement the software organism described by the design genome in the following order.
+
+{% for phase in design.implementation_sequence %}
+## {{ loop.index }}. {{ phase.phase }}
+
+- ID: `{{ phase.id }}`
+- Purpose: {{ phase.purpose }}
+- Files to create:
+{% for file in phase.files_to_create %}  - `{{ file }}`
+{% else %}  - Not specified.
+{% endfor %}
+- Validation:
+{% for item in phase.validation %}  - {{ item }}
+{% else %}  - Not specified.
+{% endfor %}
+- Traces to: {{ phase.traces_to|join(', ') }}
+{% else %}
+No implementation sequence recorded.
+{% endfor %}

@@ -1,0 +1,3 @@
+Task: suggest agent instructions for the Psilocybin Design genesis-repo.
+
+Return exactly this JSON object shape with target_path "agent_contract". Use only provided material.

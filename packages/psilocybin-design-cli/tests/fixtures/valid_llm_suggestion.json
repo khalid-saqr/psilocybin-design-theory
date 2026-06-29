@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "stage": "verbs",
+  "suggestions": [
+    {
+      "id": "suggestion-001",
+      "operation": "add",
+      "target_path": "hidden_verbs",
+      "value": {
+        "id": "verb-remember",
+        "verb": "remember",
+        "evidence": [
+          "Why did we do it this way?"
+        ],
+        "accepted": false,
+        "source": "llm_suggestion"
+      },
+      "confidence": "high",
+      "evidence": [
+        "Why did we do it this way?"
+      ],
+      "reason": "The phrase implies recovery of past rationale."
+    }
+  ],
+  "warnings": []
+}
