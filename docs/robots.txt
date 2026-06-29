@@ -1,0 +1,13 @@
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Mobile
+Allow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://khalid-saqr.github.io/psilocybin-design-theory/sitemap.xml

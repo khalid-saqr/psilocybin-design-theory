@@ -1,0 +1,1444 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Psilocybin Design: A Theory-Method for Deriving Software Organisms from Gaps</title>
+<meta name="description" content="Software design often begins after the decisive question has already been compressed into requirements, features, architecture, data models, or stack choices. This paper proposes Psilocybin Design as a theory-method for preserving that prior question. It argues that a software project begins with a ga">
+<meta name="author" content="Khalid Saqr">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://khalid-saqr.github.io/psilocybin-design-theory/paper.html">
+<link rel="stylesheet" href="style.css">
+<meta name="citation_title" content="Psilocybin Design: A Theory-Method for Deriving Software Organisms from Gaps">
+<meta name="citation_author" content="Khalid Saqr">
+<meta name="citation_publication_date" content="2026/06/29">
+<meta name="citation_online_date" content="2026/06/29">
+<meta name="citation_technical_report_institution" content="KNOWDYN LTD">
+<meta name="citation_technical_report_number" content="MD-TR-2026-001">
+<meta name="citation_pdf_url" content="https://khalid-saqr.github.io/psilocybin-design-theory/psilocybin-design-theory.pdf">
+<meta name="citation_abstract_html_url" content="https://khalid-saqr.github.io/psilocybin-design-theory/">
+<meta name="citation_fulltext_html_url" content="https://khalid-saqr.github.io/psilocybin-design-theory/paper.html">
+<meta name="citation_language" content="en">
+<meta name="citation_keywords" content="Psilocybin Design; software design theory; software architecture; software identity; decision memory; scientific computing; ontology; survival conditions">
+<meta name="DC.title" content="Psilocybin Design: A Theory-Method for Deriving Software Organisms from Gaps">
+<meta name="DC.creator" content="Khalid Saqr">
+<meta name="DC.date" content="2026-06-29">
+<meta name="DC.issued" content="2026-06-29">
+<meta name="DC.type" content="Text.Report">
+<meta name="DC.publisher" content="KNOWDYN LTD">
+<meta name="DC.identifier" content="https://khalid-saqr.github.io/psilocybin-design-theory/psilocybin-design-theory.pdf">
+<meta name="DC.language" content="en">
+<meta name="DC.rights" content="Copyright © 2026 Khalid Saqr. All rights reserved. No license granted. Rights managed by KNOWDYN LTD.">
+<meta name="prism.title" content="Psilocybin Design: A Theory-Method for Deriving Software Organisms from Gaps">
+<meta name="prism.publicationDate" content="2026-06-29">
+<meta name="prism.publicationName" content="Technical report MD-TR-2026-001, KNOWDYN LTD">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Psilocybin Design: A Theory-Method for Deriving Software Organisms from Gaps">
+<meta property="og:description" content="Software design often begins after the decisive question has already been compressed into requirements, features, architecture, data models, or stack choices. This paper proposes Psilocybin Design as a theory-method for preserving that prior question. It argues that a software project begins with a ga">
+<meta property="og:url" content="https://khalid-saqr.github.io/psilocybin-design-theory/">
+<meta property="og:site_name" content="Psilocybin Design Theory">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Psilocybin Design: A Theory-Method for Deriving Software Organisms from Gaps">
+<meta name="twitter:description" content="Software design often begins after the decisive question has already been compressed into requirements, features, architecture, data models, or stack choices. This paper proposes Psilocybin Design as a theory-method for preserving that prior question. It argues that a software project begins with a ga">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "name": "Psilocybin Design: A Theory-Method for Deriving Software Organisms from Gaps", "headline": "Psilocybin Design: A Theory-Method for Deriving Software Organisms from Gaps", "author": {"@type": "Person", "name": "Khalid Saqr", "identifier": "https://orcid.org/0000-0002-3058-2705"}, "datePublished": "2026-06-29", "dateModified": "2026-06-29", "version": "1.0.0", "abstract": "Software design often begins after the decisive question has already been compressed into requirements, features, architecture, data models, or stack choices. This paper proposes Psilocybin Design as a theory-method for preserving that prior question. It argues that a software project begins with a gap: a failed or insufficient relation between intention and possibility in a real practice. The method proceeds from the gap to the language-games around the gap, from language-games to hidden verbs, from hidden verbs to relations, from relations to invariants, and from invariants to a software genome. The genome states the minimal identity of the system: what it must sense, remember, transform, connect, protect, expose, repair, or let decay in order to remain itself. Only after this identity is extracted can an organismic model, ontology, survival conditions, and engineering body be justified. Psilocybin Design is not a claim that software is literally alive, nor is it an invitation to decorate software with biological metaphor. It is a disciplined method for deriving software identity before architecture, validating that identity through counter-design and survival tests, and tracing the result into engineering decisions. Its central claim is that software should not first be designed as a tool, product, service, repository, workflow, or stack. It should first be understood by what it must remain in order to continue bridging the gap that called it into existence.", "encoding": [{"@type": "MediaObject", "contentUrl": "https://khalid-saqr.github.io/psilocybin-design-theory/psilocybin-design-theory.pdf", "encodingFormat": "application/pdf"}, {"@type": "MediaObject", "contentUrl": "https://khalid-saqr.github.io/psilocybin-design-theory/paper.html", "encodingFormat": "text/html"}], "publisher": {"@type": "Organization", "name": "KNOWDYN LTD", "email": "ipcontrol@knowdyn.co.uk"}, "copyrightHolder": {"@type": "Person", "name": "Khalid Saqr"}, "copyrightYear": 2026, "license": "All rights reserved; no license granted", "url": "https://khalid-saqr.github.io/psilocybin-design-theory/", "isAccessibleForFree": true, "keywords": ["software design theory", "software architecture", "software identity", "decision memory", "scientific computing", "ontology", "survival conditions"]}</script>
+
+</head>
+<body>
+<nav><a href="./">Home</a> <a href="psilocybin-design-theory.pdf">PDF</a> <a href="metadata/citation.bib">BibTeX</a></nav>
+<main class="paper">
+
+<header id="title-block-header">
+<h1 class="title">Psilocybin Design: A Theory-Method for Deriving
+Software Organisms from Gaps</h1>
+<p class="author">Khalid Saqr<br />
+ORCID: <a
+href="https://orcid.org/0000-0002-3058-2705">https://orcid.org/0000-0002-3058-2705</a></p>
+<p class="date">Version 1.0.0<br />
+29 June 2026<br />
+Technical report MD-TR-2026-001, KNOWDYN LTD</p>
+<div class="abstract">
+<div class="abstract-title">Abstract</div>
+<p>Software design often begins after the decisive question has already
+been compressed into requirements, features, architecture, data models,
+or stack choices. This paper proposes Psilocybin Design as a
+theory-method for preserving that prior question. It argues that a
+software project begins with a gap: a failed or insufficient relation
+between intention and possibility in a real practice. The method
+proceeds from the gap to the language-games around the gap, from
+language-games to hidden verbs, from hidden verbs to relations, from
+relations to invariants, and from invariants to a software genome. The
+genome states the minimal identity of the system: what it must sense,
+remember, transform, connect, protect, expose, repair, or let decay in
+order to remain itself. Only after this identity is extracted can an
+organismic model, ontology, survival conditions, and engineering body be
+justified. Psilocybin Design is not a claim that software is literally
+alive, nor is it an invitation to decorate software with biological
+metaphor. It is a disciplined method for deriving software identity
+before architecture, validating that identity through counter-design and
+survival tests, and tracing the result into engineering decisions. Its
+central claim is that software should not first be designed as a tool,
+product, service, repository, workflow, or stack. It should first be
+understood by what it must remain in order to continue bridging the gap
+that called it into existence.</p>
+</div>
+</header>
+<h1 class="unnumbered" id="publication-and-rights-notice">Publication
+and Rights Notice</h1>
+<p>This public scholarly version is provided for reading, citation,
+indexing, and evaluation. Copyright © 2026 Khalid Saqr. All rights
+reserved. No license or reuse rights are granted. Rights are managed by
+KNOWDYN LTD; rights inquiries: <a
+href="mailto:ipcontrol@knowdyn.co.uk">ipcontrol@knowdyn.co.uk</a>.</p>
+<h1 id="introduction-the-prior-question-of-software">Introduction: The
+Prior Question of Software</h1>
+<p>Software design has powerful ways to reason about structure,
+decomposition, complexity, domain language, architectural constraint,
+and implementation. Dijkstra made program structure a matter of
+disciplined control rather than coding habit <span class="citation"
+data-cites="dijkstra1968"></span>. Parnas showed that modularity should
+be guided by information hiding and design decisions rather than by
+superficial decomposition <span class="citation"
+data-cites="parnas1972"></span>. Brooks argued that the essential
+difficulty of software cannot be removed by any single technical advance
+<span class="citation" data-cites="brooks1987"></span>. Evans gave
+software practice a way to let domain language shape models and
+boundaries <span class="citation" data-cites="evans2003"></span>.
+Fielding showed how architectural style can be derived from
+environmental constraints in networked systems <span class="citation"
+data-cites="fielding2000"></span>. Simon situated design within the
+larger study of artificial things that mediate between inner structure
+and outer environment <span class="citation"
+data-cites="simon2019"></span>. Wittgenstein gave a way to understand
+language as part of practice rather than as detached naming <span
+class="citation" data-cites="wittgenstein2009"></span>.</p>
+<p>These traditions address different levels of software thought. They
+ask how programs should be structured, how modules should hide design
+decisions, why complexity persists, how domain language should shape
+models, how architectural constraints should guide distributed systems,
+and how artificial systems relate inner organization to outer
+conditions. Psilocybin Design asks a prior question: before structure,
+decomposition, domain model, architectural style, or stack can be
+justified, what identity must the software have?</p>
+<p>This prior question matters because software is often designed too
+late. A condition in the world becomes a requirement. A tension becomes
+a feature. A recurring failure becomes a ticket. A social or
+organizational difficulty becomes a workflow. A need for memory becomes
+storage. A need for trust becomes a dashboard. The translation is
+useful, but it can also erase the form of the original problem. Once
+that erasure happens, engineering may proceed with competence while the
+system is already misidentified.</p>
+<p>Psilocybin Design begins before this reduction. It treats a software
+project as a response to a gap in the world. The task of design is to
+understand what kind of digital organism must exist in order for that
+gap to be bridged and for the bridge to survive. The word organism is
+used with care. The claim is not that software is biologically alive.
+The claim is that some software must preserve identity under
+environmental pressure, sense and respond to changes, maintain internal
+relations, defend boundaries, repair damage, and survive partial
+failure. In such cases, organismic language can discipline design if,
+and only if, it constrains what is built.</p>
+<p>This paper contributes four things. First, it states a theory of
+software identity derived from gaps. Second, it provides a
+genome-extraction protocol that moves from language-game evidence to
+hidden verbs, relations, invariants, and genome. Third, it validates
+genome extraction through counter-design and survival tests. Fourth, it
+requires architectural traceability from genome to invariant, ontology,
+survival condition, and engineering decision.</p>
+<p>The complete movement is:</p>
+<p><span class="math display">\[\begin{aligned}
+    \mathrm{Gap} &amp;\rightarrow \mathrm{Language\mbox{-}game}
+\rightarrow \mathrm{Hidden\ Verbs} \rightarrow \mathrm{Relations} \\
+                 &amp;\rightarrow \mathrm{Invariants} \rightarrow
+\mathrm{Genome} \rightarrow \mathrm{Organism} \rightarrow
+\mathrm{Ontology} \\
+                 &amp;\rightarrow \mathrm{Survival} \rightarrow
+\mathrm{Stack}.
+\end{aligned}\]</span></p>
+<p>The notation does not pretend that design has become mathematics. It
+records dependence. The stack should be the executable body of an
+identity already discovered, not the premature beginning of the design
+conversation.</p>
+<h1 id="definitions-and-scope">Definitions and Scope</h1>
+<p>Psilocybin Design uses biological language, but it is not a
+biological theory of software. It is a design theory that borrows
+organismic reasoning only when identity, adaptation, relation, and
+survival are central to the software problem. The following definitions
+fix the terms used throughout the paper.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Term</strong></th>
+<th style="text-align: left;"><strong>Definition</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gap</td>
+<td style="text-align: left;">A failed or insufficient relation between
+intention and possibility. A gap appears when existing arrangements no
+longer allow meaningful action to continue.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Language-game</td>
+<td style="text-align: left;">The situated words, actions, rules, roles,
+expectations, workarounds, and judgments through which people live with
+and speak around the gap.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Hidden verb</td>
+<td style="text-align: left;">An action implied by repeated language
+around the gap: remember, verify, route, reconcile, expose, authorize,
+preserve, repair, protect, forget, decay, and similar verbs.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Relation</td>
+<td style="text-align: left;">A dependency, transfer, authority, trace,
+boundary, memory, transformation, or constraint required by a hidden
+verb.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Invariant</td>
+<td style="text-align: left;">A condition that must remain true across
+changing interfaces, data stores, architectures, workflows, or
+teams.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Genome</td>
+<td style="text-align: left;">The compressed identity of the software:
+what the system must sense, remember, transform, connect, protect,
+expose, repair, or let decay in order to remain itself.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Organism</td>
+<td style="text-align: left;">A disciplined organismic model selected
+because its survival logic fits the genome and constrains design.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Ontology</td>
+<td style="text-align: left;">The internal world of entities, relations,
+states, and boundaries the organism must recognize in order to preserve
+its genome.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Survival condition</td>
+<td style="text-align: left;">A testable condition under which the
+software continues to bridge its original gap.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Death condition</td>
+<td style="text-align: left;">A failure mode in which the system may
+still run but no longer preserves the identity for which it was
+created.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Stack</td>
+<td style="text-align: left;">The executable body of the organism:
+languages, databases, services, APIs, deployment model, tests,
+observability, documentation, and maintenance practices.</td>
+</tr>
+</tbody>
+</table>
+<p>These terms define the scope of the theory. Psilocybin Design is most
+useful when software must preserve meaning across time, coordinate
+distributed relations, adapt under pressure, defend identity through
+change, or remain useful under partial failure. It is less useful for
+narrow scripts, stable forms, one-off conversions, or simple CRUD
+systems where the gap is fully expressible as a known function and
+ordinary engineering methods are sufficient.</p>
+<p>The theory should therefore be read as a conditional method. It does
+not say that every software project is a digital organism. It says that
+when a software project must preserve identity under environmental
+pressure, the identity should be extracted before the architecture is
+chosen. When organismic language does not change the design, tests,
+ontology, or architecture, it has no value and should be removed.</p>
+<h1 id="the-gap-before-requirements">The Gap Before Requirements</h1>
+<p>A software project begins with a gap. A gap is not merely an absence.
+It is a break in the relation between what people are trying to do and
+what the current world allows them to do. Someone needs to remember,
+coordinate, verify, find, preserve, exchange, constrain, explain,
+recover, or transform something, and the present arrangement cannot
+carry the burden placed upon it.</p>
+<p>The gap may be practical, informational, social, technical,
+organizational, or conceptual. It becomes a software problem when a
+digital system is called upon to restore, create, or stabilize a
+possibility of action. This is why the gap is earlier than requirements.
+A requirement is already a translation. It may be necessary, but it is
+not innocent. The translation from gap to requirement can lose the
+identity of the problem.</p>
+<p>Consider a team that cannot find past decisions. The immediate
+request may be search. The gap may not be search. It may be broken
+memory. A group that distrusts automated recommendations may ask for an
+explanation panel. The gap may not be explanation. It may be
+unverifiable authority. An organization that cannot assign work reliably
+may ask for task management. The gap may not be task assignment. It may
+be unstable responsibility. A lab that cannot distinguish current
+findings from obsolete ones may ask for versioning. The gap may not be
+version control. It may be uncontrolled knowledge decay.</p>
+<p>The first discipline of Psilocybin Design is therefore delay. The
+designer does not move immediately from complaint to feature or from
+requirement to stack. The designer remains with the gap long enough to
+ask what relation has failed and what must exist for that relation to
+become possible again. This delay is not hesitation. It is the
+protection of identity before construction.</p>
+<p>A gap can be studied at four levels.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Level</strong></th>
+<th style="text-align: left;"><strong>Question</strong></th>
+<th style="text-align: left;"><strong>Example</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Symptomatic gap</td>
+<td style="text-align: left;">What do people first complain about or
+request?</td>
+<td style="text-align: left;">“We need better search.”</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Functional gap</td>
+<td style="text-align: left;">What capability appears to be
+missing?</td>
+<td style="text-align: left;">Locate prior decisions and artifacts.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Relational gap</td>
+<td style="text-align: left;">What relation between intention and
+possibility has failed?</td>
+<td style="text-align: left;">Decisions no longer remain connected to
+reasons, evidence, and later work.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Genomic gap</td>
+<td style="text-align: left;">What identity must software have to bridge
+this failure over time?</td>
+<td style="text-align: left;">A system for preserving and routing
+recoverable research memory.</td>
+</tr>
+</tbody>
+</table>
+<p>The designer should not stop at the symptomatic or functional level.
+A feature request belongs to the symptomatic surface. A missing
+capability belongs to the functional layer. Psilocybin Design seeks the
+relational and genomic layers because they reveal what the software must
+become, not merely what it should contain.</p>
+<h1 id="language-games-as-design-evidence">Language-Games as Design
+Evidence</h1>
+<p>A gap is not silent. People speak around it before anyone designs a
+system for it. They ask where something went, who changed it, why it
+failed, what should happen next, what is allowed, what is missing, and
+what can be trusted. They create repeated phrases, informal rules,
+habits, complaints, explanations, and workarounds. These expressions are
+not noise around the problem. They are evidence of its shape.</p>
+<p>The term language-game is useful because it prevents language from
+being treated as detached description. Words gain meaning through use. A
+phrase such as “the latest version,” “the source of truth,” “who owns
+this,” or “can this be trusted” carries rules, expectations, roles,
+permissions, and possible failures. The language is already organized by
+action.</p>
+<p>A team that repeatedly asks where a decision was made does not only
+need storage. It may need recoverable memory. A user who asks whether a
+result can be trusted does not only need output. The system may need
+provenance, explanation, and restraint. A group that repeatedly asks who
+owns a task may not only need assignment. It may need a model of
+responsibility that survives handoff, absence, and changing
+dependencies.</p>
+<p>Psilocybin Design treats these repeated expressions as the beginning
+of design knowledge. The designer listens for the actions hidden inside
+the language. What must the software notice? What must it remember? What
+must it connect? What must it prevent? What must remain stable when
+everything around it changes? The language of the gap begins to reveal
+the identity of the software.</p>
+<p>The following table illustrates the extraction pattern.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Observed phrase</strong></th>
+<th style="text-align: left;"><strong>Hidden verb</strong></th>
+<th style="text-align: left;"><strong>Implied relation</strong></th>
+<th style="text-align: left;"><strong>Candidate invariant</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">“Where was this decided?”</td>
+<td style="text-align: left;">Recover</td>
+<td style="text-align: left;">Decision to reason to artifact to
+time</td>
+<td style="text-align: left;">Decisions must remain recoverable with
+rationale.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">“Can this result be trusted?”</td>
+<td style="text-align: left;">Verify</td>
+<td style="text-align: left;">Output to evidence to authority to
+confidence</td>
+<td style="text-align: left;">Claims must carry provenance and
+confidence state.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">“Who owns this now?”</td>
+<td style="text-align: left;">Transfer</td>
+<td style="text-align: left;">Task to authority to continuity</td>
+<td style="text-align: left;">Responsibility must survive handoff.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">“Which version is current?”</td>
+<td style="text-align: left;">Distinguish</td>
+<td style="text-align: left;">Artifact to state to time</td>
+<td style="text-align: left;">Currency must be visible and
+inspectable.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">“Why did this change?”</td>
+<td style="text-align: left;">Explain</td>
+<td style="text-align: left;">Change to cause to actor to
+consequence</td>
+<td style="text-align: left;">Changes must preserve reason and
+effect.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">“What does this depend on?”</td>
+<td style="text-align: left;">Relate</td>
+<td style="text-align: left;">Artifact to dependency to risk</td>
+<td style="text-align: left;">Critical dependencies must be
+explicit.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">“This keeps coming back.”</td>
+<td style="text-align: left;">Repair</td>
+<td style="text-align: left;">Failure to recurrence to unresolved
+cause</td>
+<td style="text-align: left;">Recurrent failures must become design
+signals.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">“We forgot why we rejected that.”</td>
+<td style="text-align: left;">Preserve</td>
+<td style="text-align: left;">Rejection to rationale to future
+reuse</td>
+<td style="text-align: left;">Negative decisions must remain part of
+memory.</td>
+</tr>
+</tbody>
+</table>
+<p>This table should not be read as a fixed taxonomy. It is a discipline
+of attention. The important move is from nouns to verbs. Many software
+discussions begin with nouns: dashboard, repository, agent, workflow,
+database, model, API. Psilocybin Design listens for verbs because verbs
+reveal survival. A system whose hidden verb is verify has a different
+genome from one whose hidden verb is remember. A system whose hidden
+verb is reconcile has a different ontology from one whose hidden verb is
+route. A system whose hidden verb is defend has different death
+conditions from one whose hidden verb is expose.</p>
+<h1 id="the-genome-extraction-protocol">The Genome-Extraction
+Protocol</h1>
+<p>The central method of Psilocybin Design is genome extraction. It is
+the procedure that prevents the theory from becoming metaphor. The
+genome is not invented by the designer. It is extracted from the gap
+through evidence in language and practice, then validated against
+plausible alternatives.</p>
+<p>The protocol has five primary stages:</p>
+<p><span class="math display">\[\mathrm{Language\mbox{-}game}
+\rightarrow \mathrm{Hidden\ Verbs} \rightarrow \mathrm{Relations}
+\rightarrow \mathrm{Invariants} \rightarrow
+\mathrm{Genome}.\]</span></p>
+<h2 id="stage-1-collect-language-around-the-gap">Stage 1: Collect
+language around the gap</h2>
+<p>The designer collects repeated questions, complaints, workarounds,
+informal names, permissions, failure explanations, and local rules. The
+evidence should include not only what people ask for, but what they
+repeatedly repair, distrust, route around, forget, defend, or
+reconstruct.</p>
+<p>Useful sources include interviews, support tickets, issue threads,
+meeting notes, chat channels, commit messages, operational incidents,
+onboarding questions, spreadsheet columns, naming conventions,
+undocumented rituals, and exception-handling practices. The goal is not
+ethnography for its own sake. The goal is to find the language in which
+the gap already expresses its structure.</p>
+<h2 id="stage-2-extract-hidden-verbs">Stage 2: Extract hidden verbs</h2>
+<p>The designer translates repeated language into hidden verbs. A hidden
+verb is an action the software may need to perform or preserve, even if
+users never request it as a feature. Examples include remember, route,
+verify, reconcile, authorize, expose, preserve, repair, constrain,
+decay, forget, defend, amplify, compress, and recover.</p>
+<p>A hidden verb should be accepted only if it explains repeated
+evidence. If the verb appears only because the designer likes it, it
+should be rejected. If the same evidence can be explained by several
+verbs, the designer should keep the alternatives and test them later
+through counter-design.</p>
+<h2 id="stage-3-identify-relations">Stage 3: Identify relations</h2>
+<p>A verb implies relations. To remember is not just to store; it is to
+preserve a relation between event, context, time, actor, and later
+retrieval. To trust is not just to display confidence; it is to relate
+claim, evidence, authority, uncertainty, and consequence. To coordinate
+is not just to send messages; it is to relate actors, tasks, timing,
+dependencies, and responsibility.</p>
+<p>The designer should ask: what must be connected for this verb to be
+real? What must be kept apart? What must be ordered? What must be
+transferred? What must be visible? What must be protected? What must be
+allowed to decay?</p>
+<h2 id="stage-4-form-invariants">Stage 4: Form invariants</h2>
+<p>Relations become invariants when they state conditions that must
+remain true across changes in interface, architecture, workflow, team,
+and stack. An invariant is not a user story. It is a continuity
+condition. If the invariant fails, the system may still run but has
+begun to lose its identity.</p>
+<p>For example, if the hidden verb is recover and the relation is
+decision to rationale to evidence, the invariant may be: every
+consequential decision must remain recoverable with its rationale and
+supporting artifacts. If the hidden verb is verify and the relation is
+claim to source to confidence, the invariant may be: every consequential
+claim must expose provenance and confidence state.</p>
+<h2 id="stage-5-compress-into-genome">Stage 5: Compress into genome</h2>
+<p>The designer compresses the most important invariants into a genome
+statement. The statement should be short enough to guide design and
+strong enough to reject wrong designs. It should not list features. It
+should state what the software essentially is.</p>
+<p>A useful template is:</p>
+<blockquote>
+<p>This software is essentially a system for <em>[core capacity]</em>
+that must <em>[hidden verbs]</em> across <em>[relations]</em> so that
+<em>[gap bridged]</em> remains possible under <em>[environmental
+pressures]</em>.</p>
+</blockquote>
+<p>A weak genome says: “This is a searchable archive.” A stronger genome
+says: “This is a system for preserving and routing recoverable research
+memory across distributed artifacts, decisions, and contributors so that
+knowledge remains actionable despite time, tool fragmentation, and
+personnel change.”</p>
+<p>A weak genome says: “This is a task manager.” A stronger genome says:
+“This is a system for maintaining responsibility across changing actors,
+dependencies, and states so that work remains accountable despite
+handoff and uncertainty.”</p>
+<p>A weak genome says: “This is an AI dashboard.” A stronger genome
+says: “This is a system for making automated claims inspectable,
+contestable, and accountable so that people can act under uncertainty
+without surrendering judgment to opaque output.”</p>
+<h2 id="rejection-rules">Rejection rules</h2>
+<p>Genome extraction must reject several common false genomes.</p>
+<ul>
+<li><p>A feature category is not a genome: search, chat, dashboard,
+repository, workflow, agent, and archive are possible bodies, not
+identities.</p></li>
+<li><p>A stack is not a genome: React, PostgreSQL, vector search,
+Kubernetes, or a graph database may embody a genome, but none of them
+states the system’s identity.</p></li>
+<li><p>A metaphor is not a genome: psilocybin, immune system, nervous
+system, swarm, membrane, or seed can guide design only after identity
+has been extracted.</p></li>
+<li><p>A slogan is not a genome: “make teams smarter” or “accelerate
+research” may express ambition but cannot yet reject wrong
+architecture.</p></li>
+<li><p>A domain noun is not a genome: customer, invoice, document,
+model, project, and task are entities, not identity conditions.</p></li>
+</ul>
+<p>The genome becomes usable only when it can explain why one design
+fits the gap and another fails it.</p>
+<h1 id="from-genome-to-organism">From Genome to Organism</h1>
+<p>The organism is selected after the genome, not before it. This
+ordering is essential. If the designer chooses psilocybin, immune
+system, nervous system, swarm, membrane, or ecosystem because the image
+is attractive, the biological language becomes decoration. If the
+organism is selected because its survival logic fits the genome, the
+analogy can guide structure, behavior, adaptation, and failure
+analysis.</p>
+<p>An organismic model is justified only when it satisfies five
+conditions.</p>
+<ol>
+<li><p><strong>Fit:</strong> the organism’s survival logic matches the
+extracted genome.</p></li>
+<li><p><strong>Constraint:</strong> the analogy changes what is built,
+tested, or rejected.</p></li>
+<li><p><strong>Failure:</strong> the analogy exposes ways the system can
+be damaged or die.</p></li>
+<li><p><strong>Ontology:</strong> the analogy clarifies what the system
+must recognize as real.</p></li>
+<li><p><strong>Discardability:</strong> the analogy can be abandoned
+when it stops constraining useful design.</p></li>
+</ol>
+<p>Psilocybin is appropriate when the genome requires distributed
+memory, hidden connectivity, local sensing, signal routing, resilience
+without a single visible center, and recovery through relation rather
+than command. Psilocybin is inappropriate when the system’s identity is
+centralized control, narrow calculation, stable record keeping, or
+one-way publication. In those cases other models, or no organismic model
+at all, may be better.</p>
+<p>Other organismic models can be useful, but they should be treated as
+disciplined analogies rather than a menu of aesthetic themes. An
+immune-system model may fit software whose genome is detection,
+discrimination, response, tolerance, and memory of threats. A
+nervous-system model may fit software whose genome is sensing,
+integration, feedback, and coordinated action. A membrane model may fit
+software whose genome concerns boundary, exchange, filtration, and
+selective permeability. A seed model may fit software whose identity is
+dormant potential, self-contained instruction, and context-triggered
+growth. A wound-healing model may fit software whose identity is repair
+after damage and restoration of continuity.</p>
+<p>The organism should never be asked to do mystical work. It should
+answer concrete design questions. What counts as a signal? What counts
+as damage? What must be sensed locally? What must be coordinated
+globally? What should be centralized? What should remain distributed?
+What should be forgotten? What should be defended? What should be
+allowed to mutate? If the organism cannot help answer such questions, it
+should be removed from the theory of that project.</p>
+<h1 id="ontology-as-the-internal-world-of-the-organism">Ontology as the
+Internal World of the Organism</h1>
+<p>The genome states identity. The organism gives identity a survival
+logic. Ontology defines what exists inside that logic. In Psilocybin
+Design, ontology is not merely a data model. It is the internal world
+the software must recognize in order to preserve its genome.</p>
+<p>An entity belongs in the ontology only if the organism must recognize
+it to remain itself. A relation belongs only if losing it would damage
+the genome. A state belongs only if the organism must distinguish it in
+order to survive. This rule protects the ontology from inflation.</p>
+<p>Ontology has three layers.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Layer</strong></th>
+<th style="text-align: left;"><strong>Question</strong></th>
+<th style="text-align: left;"><strong>Examples</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Entities</td>
+<td style="text-align: left;">What kinds of things must the organism
+recognize?</td>
+<td style="text-align: left;">Contributor, artifact, claim, decision,
+task, signal, repository, source, assumption.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Relations</td>
+<td style="text-align: left;">What must be connected, separated,
+ordered, transferred, or constrained?</td>
+<td style="text-align: left;">Derived from, contradicts, supersedes,
+owns, depends on, belongs to, routes to, authorizes.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">States</td>
+<td style="text-align: left;">What conditions must the organism
+distinguish?</td>
+<td style="text-align: left;">Fresh, stale, disputed, trusted, orphaned,
+active, dormant, unresolved, obsolete, decayed.</td>
+</tr>
+</tbody>
+</table>
+<p>A weak ontology names objects because they appear in the domain. A
+strong ontology names entities, relations, and states because the
+organism cannot survive without them. If the genome is recoverable
+research memory, then decisions, reasons, claims, evidence,
+contributors, artifacts, versions, confidence, contradiction, and decay
+are not optional labels. They are necessary parts of the internal world.
+If the genome is responsibility across handoff, then ownership,
+delegation, acceptance, dependency, blockage, authority, and transfer
+are not administrative details. They are survival elements.</p>
+<p>The ontology should also define boundaries. A boundary is not merely
+a permission rule. It is a distinction the organism must preserve. It
+may separate public and private knowledge, evidence and speculation,
+current and obsolete claims, accepted and contested decisions, internal
+state and external signal, or user authority and system suggestion.
+Boundary failure is often organism failure.</p>
+<h1 id="survival-conditions-and-death-conditions">Survival Conditions
+and Death Conditions</h1>
+<p>A system can be available and still dead in the sense relevant to
+Psilocybin Design. It may respond to requests, render pages, and pass
+ordinary uptime checks while no longer bridging the gap that justified
+it. Survival is therefore not mere operation. Survival is identity under
+pressure.</p>
+<p>A survival condition states what must remain true for the organism to
+continue living as itself. A death condition states how the system can
+lose identity even if the software still runs. Every survival condition
+should guide at least one engineering implication: a test, monitor,
+review practice, architectural constraint, data structure, interface
+affordance, or maintenance obligation.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Survival condition</strong></th>
+<th style="text-align: left;"><strong>Death condition</strong></th>
+<th style="text-align: left;"><strong>Engineering
+implication</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Decisions remain recoverable with
+rationale.</td>
+<td style="text-align: left;">The system stores artifacts but loses why
+decisions were made.</td>
+<td style="text-align: left;">Decision records, rationale links, author
+and time metadata, recovery views.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Claims expose provenance and
+confidence.</td>
+<td style="text-align: left;">Outputs appear authoritative without
+inspectable grounds.</td>
+<td style="text-align: left;">Provenance graph, evidence links,
+confidence states, contestation workflow.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Relations remain intact across tools.</td>
+<td style="text-align: left;">Context fragments into disconnected
+documents, messages, and repositories.</td>
+<td style="text-align: left;">Durable identifiers, graph integrity
+checks, ingestion from multiple channels.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Stale knowledge becomes visible.</td>
+<td style="text-align: left;">Obsolete claims remain indistinguishable
+from current knowledge.</td>
+<td style="text-align: left;">Decay signals, review timestamps,
+freshness indicators, archival states.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Contradictions surface before action is
+damaged.</td>
+<td style="text-align: left;">Conflicting claims remain hidden until
+they cause failure.</td>
+<td style="text-align: left;">Conflict detection, contradiction states,
+review queues, resolution records.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Responsibility survives handoff.</td>
+<td style="text-align: left;">Work loses ownership when people, teams,
+or dependencies change.</td>
+<td style="text-align: left;">Handoff protocols, acceptance states,
+owner history, escalation paths.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Loss of one channel does not destroy
+memory.</td>
+<td style="text-align: left;">Slack, email, meeting notes, or repository
+loss breaks continuity.</td>
+<td style="text-align: left;">Redundant ingestion, archival policy,
+exportable records, source reconciliation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">The system can explain its own
+boundaries.</td>
+<td style="text-align: left;">Users cannot tell what the system knows,
+ignores, protects, or guesses.</td>
+<td style="text-align: left;">Boundary documentation, permission
+visibility, uncertainty displays.</td>
+</tr>
+</tbody>
+</table>
+<p>Death conditions are especially important because they keep the
+theory honest. Without them, survival becomes a flattering word. A
+system whose genome is memory dies when it stores data but loses
+recoverability. A system whose genome is trust dies when it produces
+accurate answers that cannot be inspected in consequential contexts. A
+system whose genome is coordination dies when it sends notifications but
+cannot maintain responsibility. A system whose genome is adaptation dies
+when configuration exists but no meaningful environmental change can be
+sensed.</p>
+<p>Survival tests should be stated before the stack is selected. The
+stack is then evaluated by whether it can embody and protect the
+survival conditions. This reverses a common practice in which
+technologies are selected first and the system’s survival is later
+constrained by the accidental properties of those technologies.</p>
+<h1 id="validation-by-counter-design-and-traceability">Validation by
+Counter-Design and Traceability</h1>
+<p>A proposed genome is not valid merely because it sounds elegant. It
+must be tested against plausible wrong genomes. This is the
+counter-design principle.</p>
+<p>Counter-design asks the designer to state an alternative genome that
+a competent team might plausibly choose, design briefly under that
+genome, and show why the resulting system fails the original gap. The
+wrong genome should not be a straw man. It should be tempting. It should
+explain some of the evidence while failing deeper survival
+conditions.</p>
+<p>The validation sequence is:</p>
+<ol>
+<li><p>State the chosen genome.</p></li>
+<li><p>State at least one plausible wrong genome.</p></li>
+<li><p>Design briefly under the wrong genome.</p></li>
+<li><p>Identify what the wrong design preserves and what it
+loses.</p></li>
+<li><p>State survival tests predicted by the chosen genome.</p></li>
+<li><p>Trace those survival tests into ontology and
+architecture.</p></li>
+</ol>
+<p>A genome is stronger when it rejects more wrong designs without
+becoming vague. If a proposed genome can justify every possible
+implementation, it is too weak. If it can justify only one preferred
+stack, it is too narrow. A good genome constrains identity while leaving
+room for multiple possible embodiments.</p>
+<p>Architectural traceability is the supporting proof. Every major
+technical decision should be traceable from genome to invariant,
+ontology, survival test, and engineering body.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Genome element</strong></th>
+<th style="text-align: left;"><strong>Invariant</strong></th>
+<th style="text-align: left;"><strong>Ontological element</strong></th>
+<th style="text-align: left;"><strong>Survival test</strong></th>
+<th style="text-align: left;"><strong>Engineering decision</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Recover memory</td>
+<td style="text-align: left;">Decisions keep rationale.</td>
+<td style="text-align: left;">Decision, rationale, evidence, author,
+time.</td>
+<td style="text-align: left;">A new contributor can reconstruct why a
+decision was made.</td>
+<td style="text-align: left;">Decision graph and provenance
+records.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Expose trust</td>
+<td style="text-align: left;">Claims carry grounds.</td>
+<td style="text-align: left;">Claim, source, confidence, dispute.</td>
+<td style="text-align: left;">A user can inspect the basis of a
+consequential claim.</td>
+<td style="text-align: left;">Evidence links and confidence states.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Preserve relations</td>
+<td style="text-align: left;">Artifacts remain connected.</td>
+<td style="text-align: left;">Artifact, relation, dependency,
+version.</td>
+<td style="text-align: left;">Broken links are detected before context
+is lost.</td>
+<td style="text-align: left;">Durable IDs and graph integrity
+checks.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Resist decay</td>
+<td style="text-align: left;">Staleness is visible.</td>
+<td style="text-align: left;">Freshness, review, obsolete state.</td>
+<td style="text-align: left;">Old claims cannot masquerade as
+current.</td>
+<td style="text-align: left;">Decay signals and review workflows.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Surface contradiction</td>
+<td style="text-align: left;">Conflicts become actionable.</td>
+<td style="text-align: left;">Contradiction, tension, resolution.</td>
+<td style="text-align: left;">Incompatible claims are visible at point
+of use.</td>
+<td style="text-align: left;">Conflict detection and resolution
+queue.</td>
+</tr>
+</tbody>
+</table>
+<p>Traceability prevents post-hoc storytelling only when it is used
+before and during implementation. If a team adds a graph database and
+later calls it mycelial, traceability has failed. If the genome requires
+recoverable relations and the graph is chosen because it protects those
+relations, traceability has design force.</p>
+<h1 id="the-four-coherence-statements">The Four Coherence
+Statements</h1>
+<p>A project designed through Psilocybin Design should be expressible in
+four statements. These statements are not bureaucratic documents. They
+are the minimum expression of design coherence.</p>
+<h2 id="statement-of-genome">Statement of Genome</h2>
+<p>The statement of genome says what the software essentially is, what
+gap it bridges, and what it must sense, remember, transform, connect,
+expose, protect, repair, or let decay. If this statement is unclear, the
+design has no stable identity.</p>
+<p>A useful form is:</p>
+<blockquote>
+<p>This software is essentially <em>[identity]</em> for <em>[actors or
+environment]</em>, preserving <em>[relations or invariants]</em> so that
+<em>[meaningful action]</em> remains possible under
+<em>[pressures]</em>.</p>
+</blockquote>
+<h2 id="statement-of-organism">Statement of Organism</h2>
+<p>The statement of organism says what kind of digital organism the
+software becomes and why that organism fits the genome. If this
+statement is decorative, the biological model has failed. If it is
+precise, it guides structure, behavior, adaptation, and failure
+analysis.</p>
+<h2 id="statement-of-ontology">Statement of Ontology</h2>
+<p>The statement of ontology says what exists inside the organism and
+how those existences relate. If this statement is weak, the software may
+still be implemented, but its internal world will be unstable.</p>
+<h2 id="statement-of-survival">Statement of Survival</h2>
+<p>The statement of survival says what must remain true for the organism
+to continue living as itself. If this statement cannot be tested,
+monitored, reviewed, or protected, the design remains incomplete.</p>
+<p>The four statements create a compact discipline. They are simple
+enough to be written before implementation and strong enough to
+constrain implementation. They do not replace engineering. They prepare
+engineering so that the stack can be chosen as embodiment rather than
+guesswork.</p>
+<h1 id="canonical-case-distributed-research-memory">Canonical Case:
+Distributed Research Memory</h1>
+<p>The canonical case is a distributed research team that loses
+important decisions across messages, documents, meetings, repositories,
+experiments, and informal discussion. The apparent problem is simple:
+the team cannot find what it needs. The obvious solutions are a
+note-taking tool, a searchable archive, a shared drive, a wiki, or a
+chat bot. Psilocybin Design begins earlier.</p>
+<h2 id="observed-situation">Observed situation</h2>
+<p>The team works across multiple tools. Some reasoning happens in
+meetings. Some in chat. Some in code review. Some in documents. Some in
+notebooks. Some in informal conversations that later become assumptions.
+New contributors cannot reconstruct why a direction was chosen. Old
+contributors remember locally but cannot externalize the whole path.
+Decisions become detached from reasons. Claims survive after their
+evidence becomes obsolete. Rejected approaches are rediscovered.
+Contradictions are found late. Confidence decays silently.</p>
+<p>The symptomatic gap is search. The functional gap is fragmented
+knowledge. The relational gap is broken continuity between decision,
+rationale, evidence, artifact, and future action. The genomic gap is
+recoverable research memory under distributed uncertainty.</p>
+<h2 id="language-game-evidence">Language-game evidence</h2>
+<p>The team repeatedly asks:</p>
+<ul>
+<li><p>Where was this decided?</p></li>
+<li><p>Which version is current?</p></li>
+<li><p>Why did we abandon that approach?</p></li>
+<li><p>Who changed this assumption?</p></li>
+<li><p>What evidence supported this claim?</p></li>
+<li><p>Which artifact depends on this result?</p></li>
+<li><p>Is this still true?</p></li>
+<li><p>Did anyone resolve the contradiction?</p></li>
+<li><p>What should a new contributor read first?</p></li>
+</ul>
+<p>These questions reveal that the team is not only lacking storage. It
+is lacking durable context, provenance, confidence, and relation.</p>
+<h2 id="hidden-verbs">Hidden verbs</h2>
+<p>The hidden verbs are: remember, recover, route, relate, verify,
+distinguish, preserve, decay, surface, reconcile, and onboard. The verbs
+are not independent. To remember without recoverability is storage. To
+verify without provenance is assertion. To route without relation is
+notification. To decay without visibility is silent loss. To onboard
+without decision memory is repetition.</p>
+<h2 id="relations-and-invariants">Relations and invariants</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Hidden verb</strong></th>
+<th style="text-align: left;"><strong>Required relation</strong></th>
+<th style="text-align: left;"><strong>Invariant</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Remember</td>
+<td style="text-align: left;">Decision to rationale to artifact to
+time</td>
+<td style="text-align: left;">Consequential decisions remain connected
+to their reasons and artifacts.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Verify</td>
+<td style="text-align: left;">Claim to evidence to confidence to
+authority</td>
+<td style="text-align: left;">Claims expose their grounds and
+uncertainty.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Route</td>
+<td style="text-align: left;">Signal to context to actor to timing</td>
+<td style="text-align: left;">Relevant context reappears where action
+occurs.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Distinguish</td>
+<td style="text-align: left;">Artifact to version to current state</td>
+<td style="text-align: left;">Users can tell whether knowledge is
+current, stale, disputed, or obsolete.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Surface</td>
+<td style="text-align: left;">Contradiction to affected claims to
+resolution path</td>
+<td style="text-align: left;">Conflicts become visible before they
+damage later work.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Onboard</td>
+<td style="text-align: left;">Contributor to path to concepts to
+decisions</td>
+<td style="text-align: left;">New contributors can reconstruct enough
+memory to act responsibly.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="genome-statement">Genome statement</h2>
+<p>The genome is not note-taking. It is not search. It is not a wiki. It
+is not a vector database. The genome is:</p>
+<blockquote>
+<p>This software is essentially a system for preserving and routing
+recoverable research memory across distributed contributors, artifacts,
+decisions, claims, and tools so that research knowledge remains
+actionable despite time, uncertainty, contradiction, and personnel
+change.</p>
+</blockquote>
+<p>This statement is strong because it rejects plausible but
+insufficient designs. A searchable archive may help people find
+documents but still fail to preserve decisions, rationale, confidence,
+contradiction, and decay. A chat bot may answer questions but still
+amplify stale or unsupported claims. A wiki may centralize documentation
+but still detach knowledge from the living flow of research.</p>
+<h2 id="counter-design-the-note-taking-genome">Counter-design: the
+note-taking genome</h2>
+<p>A plausible wrong genome is: “The system is a shared note-taking and
+search tool for research artifacts.” A competent team could build this.
+It could include folders, full-text search, tags, backlinks, summaries,
+and templates. It would solve some symptoms. It would also fail the
+deeper gap.</p>
+<p>The note-taking genome fails because it treats memory as stored
+content rather than recoverable relation. It preserves pages but not
+necessarily decisions. It indexes text but not necessarily rationale. It
+stores claims but not necessarily confidence. It records current
+understanding but not necessarily decay. It allows linking but does not
+require survival of the link between artifact, evidence, decision, and
+later action.</p>
+<p>Under stress, the wrong design produces familiar failures. New
+contributors still ask why a decision happened. Old assumptions still
+appear current. Contradictions remain hidden across pages. Rejected
+approaches are rediscovered. Search returns documents but not the path
+of reasoning. The system may be useful, but it is not the organism
+required by the gap.</p>
+<h2 id="organism-selection">Organism selection</h2>
+<p>A mycelial organism is appropriate because the software must operate
+through distributed points of activity rather than a single visible
+center. It must connect fragments that remain locally produced. It must
+carry signals across documents, meetings, repositories, and decisions.
+It must preserve hidden relations without forcing all work into one
+central surface. It must allow knowledge to reappear where it becomes
+useful. The mycelial analogy constrains the design because it favors
+distributed sensing, relation-preserving growth, local context,
+redundancy, and recovery through connection.</p>
+<p>The analogy would be decorative if it merely named a graph database
+as psilocybin. It has design force only if it changes the ontology,
+survival conditions, and stack. In this case it does. The organism must
+sense events from many sources. It must preserve relations beneath
+visible surfaces. It must route context to places of action. It must
+survive partial channel loss. It must decay stale knowledge visibly
+rather than pretending memory is permanent.</p>
+<h2 id="ontology">Ontology</h2>
+<p>The organism must recognize contributors, artifacts, decisions,
+claims, assumptions, evidence, questions, links, repositories, meetings,
+experiments, unresolved tensions, contradictions, confidence states, and
+decay states. These entities are not arbitrary. If a decision is not
+represented, the system cannot preserve decision memory. If evidence is
+not related to claims, confidence cannot be inspected. If decay is not
+represented, stale knowledge can masquerade as current knowledge. If
+contradiction is not represented, conflict remains hidden until it
+damages action.</p>
+<h2 id="survival-conditions">Survival conditions</h2>
+<p>The organism survives if:</p>
+<ol>
+<li><p>a new contributor can recover the path of a decision;</p></li>
+<li><p>a claim can be traced to evidence, author, time, and
+confidence;</p></li>
+<li><p>related artifacts remain connected across tools;</p></li>
+<li><p>stale or conflicting knowledge can be surfaced;</p></li>
+<li><p>the loss of one communication channel does not destroy
+memory;</p></li>
+<li><p>uncertainty remains visible rather than flattened into false
+certainty;</p></li>
+<li><p>research questions, repositories, and participants can change
+without destroying continuity.</p></li>
+</ol>
+<p>It dies, in the relevant design sense, if it becomes a pile of
+searchable content without recoverable relations. It also dies if it
+becomes an answer engine that hides uncertainty, or a documentation site
+that freezes living research into static pages.</p>
+<h2 id="stack-implications">Stack implications</h2>
+<p>Only now can the engineering body be selected. The design may require
+event ingestion from existing tools, durable identifiers, a graph of
+relations, provenance records, version history, contradiction detection,
+decay signals, contextual search, permission rules tied to authority,
+recovery workflows, and tests for broken links or lost provenance. These
+are not technical ornaments. They follow from the genome.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Need derived from
+genome</strong></th>
+<th style="text-align: left;"><strong>Likely body part</strong></th>
+<th style="text-align: left;"><strong>Reason</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Recover decision memory</td>
+<td style="text-align: left;">Provenance graph</td>
+<td style="text-align: left;">Decisions, evidence, actors, and artifacts
+must remain connected.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sense distributed activity</td>
+<td style="text-align: left;">Event ingestion layer</td>
+<td style="text-align: left;">Knowledge appears across tools and must be
+sensed locally.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Preserve relation across change</td>
+<td style="text-align: left;">Durable identifiers</td>
+<td style="text-align: left;">Links must survive renaming, movement, and
+tool fragmentation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Expose stale knowledge</td>
+<td style="text-align: left;">Decay model</td>
+<td style="text-align: left;">Age, review state, and contradiction must
+affect trust.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Route context into work</td>
+<td style="text-align: left;">Contextual retrieval interface</td>
+<td style="text-align: left;">Memory must reappear where action happens,
+not only in a separate archive.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Protect authority and confidence</td>
+<td style="text-align: left;">Permission and confidence model</td>
+<td style="text-align: left;">Not all claims, users, or contexts have
+equal authority.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Detect organism damage</td>
+<td style="text-align: left;">Integrity tests</td>
+<td style="text-align: left;">Broken provenance, orphaned decisions, and
+stale claims should be visible.</td>
+</tr>
+</tbody>
+</table>
+<p>A simple searchable note system might satisfy the apparent
+requirement while failing the organism. Psilocybin Design changes the
+design outcome because it changes the identity being served.</p>
+<h1 id="boundary-case-i-open-source-project-governance">Boundary Case I:
+Open-Source Project Governance</h1>
+<p>A second case shows that the method can transfer beyond research
+memory. Consider a large open-source project with many contributors,
+maintainers, issues, pull requests, design discussions, release
+branches, security reports, and governance decisions. The symptomatic
+gap may be “too many issues” or “slow review.” The functional gap may be
+coordination. The relational gap is continuity of authority, trust,
+contribution, and decision across distributed participants.</p>
+<p>The language-game includes phrases such as: “Who can approve this?”,
+“Why was this proposal rejected?”, “Is this issue still valid?”, “Which
+maintainer owns this area?”, “Does this change break the roadmap?”, “Was
+this security concern resolved?”, and “What is the status of this
+contributor’s proposal?”</p>
+<p>The hidden verbs include authorize, route, review, remember, resolve,
+defer, trust, escalate, and decay. The relations include contributor to
+authority, issue to owner, pull request to review state, proposal to
+rationale, release to risk, security report to confidentiality boundary,
+and decision to governance rule.</p>
+<p>A possible genome is:</p>
+<blockquote>
+<p>This software is essentially a system for preserving accountable
+contribution flow across distributed participants, artifacts, authority
+boundaries, and project memory so that an open-source project can evolve
+without losing trust, continuity, or governance legitimacy.</p>
+</blockquote>
+<p>A plausible wrong genome is: “The system is an issue triage
+dashboard.” That design may improve visibility but fail to preserve
+authority, rationale, trust, and governance continuity. The dashboard
+may show what is open, assigned, or stale, but still fail to answer why
+a decision was made, who had authority to make it, what rule was
+applied, and how a contributor can responsibly proceed.</p>
+<p>The organism may again be mycelial if the project depends on
+distributed sensing and relation-preserving flow. It may also require a
+membrane model, because boundaries matter: public discussion, private
+security reports, maintainer authority, contributor reputation, release
+gates, and community norms cannot all be treated as one flat space.</p>
+<p>The ontology would include contributors, maintainers, modules,
+issues, pull requests, proposals, decisions, release branches, authority
+scopes, governance rules, review states, trust states, security
+boundaries, and decay states. Survival conditions include: decisions
+remain traceable to governance rules; stale issues do not appear
+equivalent to active ones; authority boundaries remain visible;
+contributor pathways remain legible; security-sensitive relations remain
+protected; and project memory survives maintainer turnover.</p>
+<p>This case shows that Psilocybin Design is not limited to research
+memory. It applies where software must preserve meaningful relation
+across distributed activity and environmental change.</p>
+<h1 id="boundary-case-ii-when-psilocybin-design-is-unnecessary">Boundary
+Case II: When Psilocybin Design Is Unnecessary</h1>
+<p>A mature theory should know when not to use itself. Consider a small
+internal utility that renames files according to a fixed convention, or
+a static invoice-number formatter, or a simple CRUD form for a stable
+list of office supplies. The gap is narrow. The environment is stable.
+The identity is obvious. The survival conditions are ordinary
+correctness, availability, and maintainability. There is no deep need
+for organismic reasoning.</p>
+<p>A Psilocybin Design analysis could still be forced onto the case. The
+designer might say that the file renamer has a genome of transformation,
+a membrane between raw and normalized names, and survival conditions of
+naming integrity. This would be technically possible but theoretically
+wasteful. Ordinary engineering would be clearer.</p>
+<p>This boundary case matters. Psilocybin Design should not become a
+universal hammer. Its value appears when the design problem includes
+identity under pressure: memory across time, coordination across actors,
+trust under uncertainty, adaptation under change, boundary protection,
+relation preservation, or survival under partial failure. When those
+pressures are absent, the method may add language without adding design
+value.</p>
+<p>The scope limit is therefore:</p>
+<blockquote>
+<p>Use Psilocybin Design when the hard part of the software is not
+merely performing a function, but remaining the right kind of system
+while the environment changes.</p>
+</blockquote>
+<h1 id="relation-to-earlier-software-thought">Relation to Earlier
+Software Thought</h1>
+<p>Psilocybin Design does not reject earlier software design theories.
+It depends on the seriousness they gave to different layers of software
+practice. Its contribution is not to replace them, but to name a prior
+layer that they do not make central.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Tradition</strong></th>
+<th style="text-align: left;"><strong>Contribution</strong></th>
+<th style="text-align: left;"><strong>Psilocybin Design adds before
+it</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Dijkstra</td>
+<td style="text-align: left;">Discipline of program structure and
+control.</td>
+<td style="text-align: left;">Identity before structure.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Parnas</td>
+<td style="text-align: left;">Decomposition around hidden design
+decisions.</td>
+<td style="text-align: left;">Genome before modular decomposition.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Brooks</td>
+<td style="text-align: left;">Recognition of essential complexity.</td>
+<td style="text-align: left;">Gap as source of essential identity.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Evans / Domain-Driven Design</td>
+<td style="text-align: left;">Domain language, models, and bounded
+contexts.</td>
+<td style="text-align: left;">Language-game analysis before domain
+model.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Fielding</td>
+<td style="text-align: left;">Architecture derived from
+constraints.</td>
+<td style="text-align: left;">Survival conditions before architectural
+constraints.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Alexander</td>
+<td style="text-align: left;">Patterns as reusable relations between
+problem and form.</td>
+<td style="text-align: left;">Genome as identity prior to pattern
+selection.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Simon</td>
+<td style="text-align: left;">Artificial systems mediating inner
+structure and outer environment.</td>
+<td style="text-align: left;">Organismic identity as the basis of
+mediation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Wittgenstein</td>
+<td style="text-align: left;">Meaning through use in forms of life.</td>
+<td style="text-align: left;">Gap language as evidence for software
+identity.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Distributed cognition</td>
+<td style="text-align: left;">Cognition as distributed across people,
+artifacts, and environment.</td>
+<td style="text-align: left;">Software organism as a deliberate
+preservation of such distributed relations.</td>
+</tr>
+</tbody>
+</table>
+<p>A program can be well structured and still be the wrong organism. A
+system can be modular and still hide the wrong decisions. A domain model
+can be rich and still miss the genome. An architecture can satisfy
+constraints and still fail the gap. A stack can be modern and still
+embody a false identity. Psilocybin Design gives these practices an
+earlier object of care. It asks them to serve the genome, ontology, and
+survival conditions of the organism.</p>
+<p>The theory is therefore modest in form but large in consequence. It
+does not promise a silver bullet. It does not claim that all software
+must be biological in language or structure. It does not replace
+programming, architecture, domain modeling, testing, verification,
+operations, or maintenance. It claims that before those practices can be
+fully justified, the identity of the software must be discovered and
+stated.</p>
+<h1 id="limits-and-failure-modes">Limits and Failure Modes</h1>
+<p>A theory of design should know how it fails. Psilocybin Design fails
+in several recognizable ways.</p>
+<h2 id="metaphor-as-decoration">Metaphor as decoration</h2>
+<p>The theory fails when biological language becomes ornament. Calling a
+graph database mycelial, a firewall immune, or a message bus nervous
+does not produce design knowledge. The organismic model must change what
+is built, tested, monitored, protected, or removed. If it does not, the
+language should be discarded.</p>
+<h2 id="genome-asserted-instead-of-extracted">Genome asserted instead of
+extracted</h2>
+<p>The theory fails when the designer simply declares that the system’s
+genome is memory, trust, coordination, or adaptation. The genome must be
+supported by gap evidence and language-game analysis. It must explain
+repeated questions, practices, failures, and workarounds. It must also
+survive counter-design.</p>
+<h2 id="false-genome">False genome</h2>
+<p>A false genome is an identity statement that sounds plausible but
+preserves the wrong thing. For example, a team may claim that its
+research system is an archive when the real genome is recoverable
+decision memory. The archive genome preserves documents. The memory
+genome preserves relations that make documents actionable.</p>
+<h2 id="metaphor-lock-in">Metaphor lock-in</h2>
+<p>The theory fails when the chosen organism prevents better engineering
+choices. The biological analogy should constrain design, but it should
+not become sacred. If the organism no longer clarifies survival, it must
+be revised or discarded.</p>
+<h2 id="ontology-inflation">Ontology inflation</h2>
+<p>The theory fails when ontology becomes a catalogue of everything in
+the domain. An entity belongs only if the organism must recognize it to
+preserve its genome. An inflated ontology weakens the system’s internal
+world by making all distinctions appear equally important.</p>
+<h2 id="survival-overfitting">Survival overfitting</h2>
+<p>The theory fails when survival tests protect only the designer’s
+initial interpretation rather than the system’s real identity under
+changing conditions. Survival conditions should be reviewed as the
+environment changes, but the genome should not be revised casually to
+excuse every new feature request.</p>
+<h2 id="traceability-theater">Traceability theater</h2>
+<p>The theory fails when architecture is justified after the fact. A
+team may build a system using preferred technologies and later draw
+arrows back to genome language. This is not traceability. Traceability
+has force only when it influences decisions before and during
+implementation.</p>
+<h2 id="overuse">Overuse</h2>
+<p>The theory fails when used on trivial or stable problems where
+ordinary engineering is enough. A method that cannot say when it is
+unnecessary becomes suspicious. Psilocybin Design earns trust by
+limiting its own domain.</p>
+<h1 id="a-compact-formal-statement">A Compact Formal Statement</h1>
+<p>The theory can be stated compactly. Let <span
+class="math inline">\(G\)</span> be a gap, <span
+class="math inline">\(L\)</span> the language-game around the gap, <span
+class="math inline">\(V\)</span> the set of hidden verbs extracted from
+the language-game, <span class="math inline">\(R\)</span> the relations
+implied by those verbs, <span class="math inline">\(I\)</span> the
+invariants derived from the relations, and <span
+class="math inline">\(\Gamma\)</span> the genome compressed from the
+invariants.</p>
+<p><span class="math display">\[G \xrightarrow{evidence} L
+\xrightarrow{interpretation} V \xrightarrow{relation} R
+\xrightarrow{stability} I \xrightarrow{compression} \Gamma.\]</span></p>
+<p>The genome <span class="math inline">\(\Gamma\)</span> is acceptable
+only if it satisfies four conditions.</p>
+<ol>
+<li><p><strong>Explanatory fit:</strong> it explains the repeated
+language and workarounds around the gap.</p></li>
+<li><p><strong>Rejection power:</strong> it rejects plausible wrong
+designs through counter-design.</p></li>
+<li><p><strong>Survival prediction:</strong> it predicts what the system
+must preserve, expose, repair, defend, or let decay.</p></li>
+<li><p><strong>Traceability:</strong> it can be traced into ontology,
+survival tests, and engineering decisions.</p></li>
+</ol>
+<p>Once <span class="math inline">\(\Gamma\)</span> is accepted, the
+designer may select an organismic model <span
+class="math inline">\(O\)</span> only if the model’s survival logic
+constrains the design. The organism implies an ontology <span
+class="math inline">\(\Omega\)</span>, survival conditions <span
+class="math inline">\(S\)</span>, death conditions <span
+class="math inline">\(D\)</span>, and stack decisions <span
+class="math inline">\(B\)</span>.</p>
+<p><span class="math display">\[\Gamma \rightarrow O \rightarrow \Omega
+\rightarrow S,D \rightarrow B.\]</span></p>
+<p>A Psilocybin Design is coherent when the engineering body <span
+class="math inline">\(B\)</span> can be justified by the survival
+conditions <span class="math inline">\(S\)</span>, which are grounded in
+the ontology <span class="math inline">\(\Omega\)</span>, which is
+required by the organism <span class="math inline">\(O\)</span>, which
+is selected because it fits the genome <span
+class="math inline">\(\Gamma\)</span>, which was extracted from the
+original gap <span class="math inline">\(G\)</span>.</p>
+<p>This formalism is intentionally light. It is not a calculus of
+software. It is a check against premature construction and metaphor
+drift.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>Psilocybin Design begins with a simple reversal. Do not begin with
+the stack. Do not begin with the feature list. Do not begin with
+architecture. Begin with the gap that makes software necessary.</p>
+<p>The gap speaks through language-games. Language-games reveal hidden
+verbs. Hidden verbs imply relations. Relations produce invariants.
+Invariants compress into a genome. The genome selects an organism only
+when an organism’s survival logic fits the identity. The organism
+requires an ontology. The ontology exposes survival and death
+conditions. The survival conditions justify the engineering body.</p>
+<p>This movement gives software design a prior discipline. It asks what
+the software must remain before deciding what it should contain. It
+treats engineering not as the first act of design, but as the embodiment
+of an identity already discovered.</p>
+<p>Psilocybin Design does not make software biological. It gives
+software design a disciplined way to discover what a system must remain
+before deciding how it should be built. It asks designers to protect the
+identity of the software before they construct its body. The result is
+not metaphorical softness but engineering accountability: every major
+component should serve the genome, support the ontology, or protect
+survival.</p>
+<p>Software is usually described as something constructed. Psilocybin
+Design proposes that the deeper act is to bring into existence a digital
+organism capable of surviving the gap that called it forth.</p>
+<div class="thebibliography">
+<p><span>99</span></p>
+<p>Christopher Alexander, Sara Ishikawa, and Murray Silverstein. <em>A
+Pattern Language: Towns, Buildings, Construction</em>. Oxford University
+Press, New York, 1977.</p>
+<p>Frederick P. Brooks, Jr. No Silver Bullet: Essence and Accidents of
+Software Engineering. <em>Computer</em>, 20(4):10–19, 1987. doi: <a
+href="https://doi.org/10.1109/MC.1987.1663532">10.1109/MC.1987.1663532</a>.</p>
+<p>Edsger W. Dijkstra. Letters to the Editor: Go To Statement Considered
+Harmful. <em>Communications of the ACM</em>, 11(3):147–148, 1968. doi:
+<a
+href="https://doi.org/10.1145/362929.362947">10.1145/362929.362947</a>.</p>
+<p>Eric Evans. <em>Domain-Driven Design: Tackling Complexity in the
+Heart of Software</em>. Addison-Wesley Professional, Boston, 2003.</p>
+<p>Roy Thomas Fielding. <em>Architectural Styles and the Design of
+Network-based Software Architectures</em>. PhD dissertation, University
+of California, Irvine, 2000. Available at: <a
+href="https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm"
+class="uri">https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm</a>.</p>
+<p>Edwin Hutchins. <em>Cognition in the Wild</em>. MIT Press, Cambridge,
+MA, 1995.</p>
+<p>Humberto R. Maturana and Francisco J. Varela. <em>Autopoiesis and
+Cognition: The Realization of the Living</em>. D. Reidel Publishing
+Company, Dordrecht, 1980.</p>
+<p>David L. Parnas. On the Criteria To Be Used in Decomposing Systems
+into Modules. <em>Communications of the ACM</em>, 15(12):1053–1058,
+1972. doi: <a
+href="https://doi.org/10.1145/361598.361623">10.1145/361598.361623</a>.</p>
+<p>Herbert A. Simon. <em>The Sciences of the Artificial</em>. Reissue of
+the third edition, The MIT Press, Cambridge, MA, 2019. First published
+1969; third edition first published 1996.</p>
+<p>Lucy Suchman. <em>Human-Machine Reconfigurations: Plans and Situated
+Actions</em>. Cambridge University Press, Cambridge, 2007.</p>
+<p>Terry Winograd and Fernando Flores. <em>Understanding Computers and
+Cognition: A New Foundation for Design</em>. Ablex Publishing, Norwood,
+NJ, 1986.</p>
+<p>Ludwig Wittgenstein. <em>Philosophical Investigations</em>. Fourth
+edition. Translated by G. E. M. Anscombe, P. M. S. Hacker, and Joachim
+Schulte. Revised by P. M. S. Hacker and Joachim Schulte.
+Wiley-Blackwell, Chichester, 2009. First published 1953.</p>
+</div>
+
+</main>
+<footer><p class="small">Copyright © 2026 Khalid Saqr. All rights reserved. No license granted. Rights managed by KNOWDYN LTD, <a href="mailto:ipcontrol@knowdyn.co.uk">ipcontrol@knowdyn.co.uk</a>.</p></footer>
+</body>
+</html>

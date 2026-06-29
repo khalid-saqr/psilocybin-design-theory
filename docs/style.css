@@ -1,0 +1,30 @@
+/* Psilocybin Design Theory - scholarly GitHub Pages site */
+:root { color-scheme: light dark; --bg: #fbfaf7; --fg: #171717; --muted: #5c5c5c; --card: #ffffff; --border: #d9d5ca; --accent: #284b3a; --code: #f1eee7; }
+@media (prefers-color-scheme: dark) { :root { --bg: #111310; --fg: #f1f1ed; --muted: #b9b9b0; --card: #181b16; --border: #36392f; --accent: #9fc6ad; --code: #20241f; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif; line-height: 1.62; }
+main, header, footer, nav { max-width: 980px; margin: 0 auto; padding: 0 1.25rem; }
+header { padding-top: 4rem; padding-bottom: 2rem; }
+nav { padding-top: 1rem; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+nav a { margin-right: 1rem; white-space: nowrap; }
+h1 { font-size: clamp(2.2rem, 5vw, 4.6rem); line-height: 0.98; letter-spacing: -0.04em; margin: 0 0 1rem; }
+h2 { margin-top: 2.2rem; font-size: 1.55rem; }
+h3 { margin-top: 1.6rem; }
+p, li { font-size: 1.06rem; }
+a { color: var(--accent); text-underline-offset: 0.18em; }
+.kicker { color: var(--accent); text-transform: uppercase; letter-spacing: 0.12em; font: 700 0.78rem ui-sans-serif, system-ui, sans-serif; }
+.meta, .small { color: var(--muted); font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.94rem; }
+.abstract { background: var(--card); border: 1px solid var(--border); border-radius: 18px; padding: 1.2rem 1.35rem; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1.5rem 0; }
+.button { display: inline-block; border: 1px solid var(--accent); border-radius: 999px; padding: 0.7rem 1rem; font-family: ui-sans-serif, system-ui, sans-serif; text-decoration: none; }
+.button.primary { background: var(--accent); color: var(--bg); }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 1rem 1.1rem; }
+pre { background: var(--code); padding: 1rem; overflow-x: auto; border-radius: 12px; border: 1px solid var(--border); }
+code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+footer { margin-top: 4rem; padding-bottom: 2rem; border-top: 1px solid var(--border); padding-top: 1.2rem; }
+.paper { max-width: 900px; }
+.paper h1 { font-size: 2.4rem; line-height: 1.1; }
+.paper table { border-collapse: collapse; max-width: 100%; display: block; overflow-x: auto; }
+.paper th, .paper td { border: 1px solid var(--border); padding: 0.45rem; vertical-align: top; }
+.paper .author { font-size: 1.2rem; color: var(--muted); }
