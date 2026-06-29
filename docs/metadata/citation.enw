@@ -1,5 +1,5 @@
 %0 Report
-%T Psilocybin Design: A Theory-Method for Deriving Software Organisms from Gaps
+%T Psilocybin Design:  Bio-inspired theory and CLI package for designing computer software as digital organisms
 %A Saqr, Khalid
 %D 2026
 %8 2026/06/29
@@ -7,4 +7,4 @@
 %9 Technical report
 %N MD-TR-2026-001
 %U https://khalid-saqr.github.io/psilocybin-design-theory/
-%Z Version 1.0.0. All rights reserved. Rights managed by KNOWDYN LTD.
+%Z Version 1.0.1. All rights reserved. Rights managed by KNOWDYN LTD.

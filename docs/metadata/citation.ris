@@ -1,5 +1,5 @@
 TY  - RPRT
-TI  - Psilocybin Design: A Theory-Method for Deriving Software Organisms from Gaps
+TI  - Psilocybin Design:  Bio-inspired theory and CLI package for designing computer software as digital organisms
 AU  - Saqr, Khalid
 PY  - 2026
 DA  - 2026/06/29
@@ -7,5 +7,5 @@ PB  - KNOWDYN LTD
 M3  - Technical report
 SN  - MD-TR-2026-001
 UR  - https://khalid-saqr.github.io/psilocybin-design-theory/
-N1  - Version 1.0.0. All rights reserved. Rights managed by KNOWDYN LTD.
+N1  - Version 1.0.1. All rights reserved. Rights managed by KNOWDYN LTD.
 ER  - 

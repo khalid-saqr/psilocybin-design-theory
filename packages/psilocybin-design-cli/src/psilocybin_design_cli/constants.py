@@ -2,7 +2,7 @@ from __future__ import annotations
 
 APP_NAME = "psilocybin"
 PACKAGE_NAME = "psilocybin-design-cli"
-VERSION = "1.0.0"
+VERSION = "1.0.1"
 DESIGN_FILENAME = "psilocybin.design.yaml"
 SCHEMA_VERSION = "1.0"
 

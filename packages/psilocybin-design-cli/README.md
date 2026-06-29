@@ -1,6 +1,6 @@
 # Psilocybin Genesis CLI
 
-Version: **1.0.0 Stable MVP**
+Version: **1.0.1 Stable MVP**
 
 Psilocybin Genesis CLI is a local-first, LLM-assisted design compiler. It guides
 a user through Psilocybin Design Theory and emits an agent-readable
