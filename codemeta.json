@@ -1,0 +1,24 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "name": "Psilocybin Design Theory publication repository",
+  "description": "Publication repository and GitHub Pages site for Psilocybin Design: A Theory-Method for Deriving Software Organisms from Gaps.",
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Khalid",
+      "familyName": "Saqr",
+      "@id": "https://orcid.org/0000-0002-3058-2705"
+    }
+  ],
+  "copyrightHolder": {
+    "@type": "Person",
+    "name": "Khalid Saqr"
+  },
+  "copyrightYear": "2026",
+  "license": "All rights reserved; no license granted",
+  "codeRepository": "https://github.com/khalid-saqr/psilocybin-design-theory",
+  "dateCreated": "2026-06-29",
+  "datePublished": "2026-06-29",
+  "version": "1.0.0"
+}

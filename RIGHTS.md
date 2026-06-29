@@ -1,0 +1,13 @@
+# Rights
+
+All Rights Reserved
+
+Copyright (c) 2026 Khalid Saqr. All rights reserved.
+
+No license is granted for use, copying, modification, distribution, sublicensing, or creation of derivative works from the content, source files, generated files, text, images, metadata, or repository materials, except where such use is independently permitted by applicable law.
+
+All intellectual-property rights are reserved to the author and managed by KNOWDYN LTD.
+
+Rights inquiries: ipcontrol@knowdyn.co.uk
+
+This repository is published for scholarly reading, citation, indexing, evaluation, and funding diligence only. Publication of the materials in a public repository does not constitute an open-source license, public-domain dedication, Creative Commons license, or implied permission to reuse the work.
