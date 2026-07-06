@@ -1,6 +1,39 @@
-# Psilocybin Design Theory
-
-## Design a computer software as a digital organism. Build the genome, ontology, and survival conditions of your new software before asking an agent to code it.
+ # Psilocybin Design Theory
++
++<p align="left">
++  <a href="#technical-report-metadata"><img alt="Version" src="https://img.shields.io/badge/version-1.0.1-111111?style=flat-square"></a>
++  <a href="#technical-report-metadata"><img alt="Technical Report" src="https://img.shields.io/badge/technical%20report-MD--TR--2026--001-111111?style=flat-square"></a>
++  <a href="#rights-and-license"><img alt="Rights" src="https://img.shields.io/badge/rights-all%20rights%20reserved-7a1f1f?style=flat-square"></a>
++  <a href="#citation-and-indexing"><img alt="Citation Metadata" src="https://img.shields.io/badge/citation-metadata%20included-2f4f4f?style=flat-square"></a>
++</p>
++
++<p align="left">
++  <a href="#install-the-cli"><img alt="CLI" src="https://img.shields.io/badge/CLI-psilocybin-1f2937?style=flat-square&logo=python&logoColor=white"></a>
++  <a href="packages/psilocybin-design-cli/"><img alt="Python Package" src="https://img.shields.io/badge/package-Python%20CLI-2563eb?style=flat-square&logo=python&logoColor=white"></a>
++  <a href="#configure-an-optional-local-llm"><img alt="Local LLM Ready" src="https://img.shields.io/badge/local%20LLM-optional-4b5563?style=flat-square"></a>
++  <a href="#coding-agent-handoff"><img alt="Agent Handoff" src="https://img.shields.io/badge/agent%20handoff-Codex%20%7C%20Claude%20Code%20%7C%20Copilot-374151?style=flat-square"></a>
++</p>
++
++<p align="left">
++  <a href="https://khalid-saqr.github.io/psilocybin-design-theory/"><img alt="GitHub Pages" src="https://img.shields.io/badge/docs-GitHub%20Pages-111827?style=flat-square&logo=githubpages&logoColor=white"></a>
++  <a href="https://khalid-saqr.github.io/psilocybin-design-theory/psilocybin-design-theory.pdf"><img alt="PDF Paper" src="https://img.shields.io/badge/paper-PDF-b91c1c?style=flat-square&logo=adobeacrobatreader&logoColor=white"></a>
++  <a href="https://colab.research.google.com/github/khalid-saqr/psilocybin-design-theory/blob/main/notebooks/Psilocybin_Genesis_CLI_v1_Colab_Tutorial.ipynb"><img alt="Open CLI Tutorial in Colab" src="https://img.shields.io/badge/Colab-CLI%20tutorial-f9ab00?style=flat-square&logo=googlecolab&logoColor=black"></a>
++  <a href="https://colab.research.google.com/github/khalid-saqr/psilocybin-design-theory/blob/main/notebooks/Psilocybin_Genesis_CLI_DeepSeek_Interview_Tutorial.ipynb"><img alt="Open DeepSeek Tutorial in Colab" src="https://img.shields.io/badge/Colab-DeepSeek%20interview-f9ab00?style=flat-square&logo=googlecolab&logoColor=black"></a>
++</p>
++
++<p align="left">
++  <a href="https://orcid.org/0000-0002-3058-2705"><img alt="ORCID" src="https://img.shields.io/badge/ORCID-0000--0002--3058--2705-a6ce39?style=flat-square&logo=orcid&logoColor=white"></a>
++  <a href="mailto:ipcontrol@knowdyn.co.uk"><img alt="Rights Contact" src="https://img.shields.io/badge/rights%20contact-ipcontrol%40knowdyn.co.uk-334155?style=flat-square"></a>
++</p>
++
++<p align="left">
++  <strong>🧬 Genome-first software design</strong> ·
++  <strong>🧠 language-game analysis</strong> ·
++  <strong>🧾 traceable genesis repositories</strong> ·
++  <strong>🤖 coding-agent handoff</strong>
++</p>
+ 
+ ## Design a computer software as a digital organism. Build the genome, ontology, and survival conditions of your new software before asking an agent to code it.
 
 **Psilocybin Design Theory** is a theory-method and practical CLI workflow for turning an concept-level software intention into an agent-readable **genesis repository**.
 
